@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ITmanagementModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblAccessList' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblAccessList">
+    <Key>
+      <PropertyRef Name="AccessNo" />
+      <PropertyRef Name="AccessName" />
+    </Key>
+    <Property Name="AccessNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AccessName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="RecordDate" Type="datetime" />
+    <Property Name="TypeofAccess" Type="varchar" MaxLength="50" />
+    <Property Name="OrderNo" Type="varchar" MaxLength="50" />
+    <Property Name="OrderDate" Type="datetime" />
+    <Property Name="ValueOfAccess" Type="float" />
+    <Property Name="WarrantyValue" Type="varchar" MaxLength="50" />
+    <Property Name="WarrantyUnit" Type="varchar" MaxLength="50" />
+    <Property Name="StartWarranty" Type="datetime" />
+    <Property Name="EndWarranty" Type="datetime" />
+    <Property Name="PlaceOfWarranty" Type="varchar" MaxLength="100" />
+    <Property Name="SupplierCode" Type="varchar" MaxLength="50" />
+    <Property Name="SupplierName" Type="varchar" MaxLength="200" />
+    <Property Name="Remark" Type="varchar" MaxLength="250" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="ModifyDate" Type="datetime" />
+    <Property Name="ModifyBy" Type="varchar" MaxLength="50" />
+    <Property Name="StatusOnStock" Type="char" MaxLength="5" />
+    <Property Name="SN" Type="varchar" MaxLength="50" />
+    <Property Name="Branch" Type="varchar" MaxLength="50" />
+    <Property Name="Department" Type="varchar" MaxLength="50" />
+    <Property Name="Owner" Type="varchar" MaxLength="50" />
+    <Property Name="AccessAccount" Type="varchar" MaxLength="50" />
+    <Property Name="ReceiveDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblAccessListDetail' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblAccessListDetail">
+    <Key>
+      <PropertyRef Name="AccessNo" />
+      <PropertyRef Name="ItemNo" />
+      <PropertyRef Name="TypeOfDevice" />
+      <PropertyRef Name="NameOfDevice" />
+    </Key>
+    <Property Name="AccessNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ItemNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TypeOfDevice" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="NameOfDevice" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Price" Type="float" />
+    <Property Name="OrderNo" Type="varchar" MaxLength="50" />
+    <Property Name="WarrantyValue" Type="float" />
+    <Property Name="WarrantyUnit" Type="varchar" MaxLength="50" />
+    <Property Name="StartWarranty" Type="datetime" />
+    <Property Name="EndWarranty" Type="datetime" />
+    <Property Name="PlaceOfWarranty" Type="varchar" MaxLength="200" />
+    <Property Name="SupplierCode" Type="varchar" MaxLength="50" />
+    <Property Name="SupplierName" Type="varchar" MaxLength="200" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="ModifyDate" Type="datetime" />
+    <Property Name="ModifyName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblDepartment' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblDepartment">
+    <Key>
+      <PropertyRef Name="Branch" />
+      <PropertyRef Name="Party" />
+      <PropertyRef Name="Department" />
+    </Key>
+    <Property Name="Branch" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Party" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Department" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Manager" Type="varchar" MaxLength="50" />
+    <Property Name="A_Manager" Type="varchar" MaxLength="50" />
+    <Property Name="Status" Type="int" />
+    <Property Name="Userby" Type="varchar" MaxLength="50" />
+    <Property Name="Lastupdate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblMasterCode' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblMasterCode">
+    <Key>
+      <PropertyRef Name="Type" />
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="Type" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="200" />
+    <Property Name="Note" Type="varchar" MaxLength="200" />
+    <Property Name="FilterInd" Type="varchar" MaxLength="50" />
+    <Property Name="TypeCode" Type="varchar" MaxLength="50" />
+    <Property Name="LisenceSum" Type="int" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdateDate" Type="datetime" />
+  </EntityType>
+  <EntityContainer Name="ITmanagementModelStoreContainer">
+    <EntitySet Name="tblAccessList" EntityType="Self.tblAccessList" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblAccessList].[AccessNo] AS [AccessNo], 
+    [tblAccessList].[AccessName] AS [AccessName], 
+    [tblAccessList].[RecordDate] AS [RecordDate], 
+    [tblAccessList].[TypeofAccess] AS [TypeofAccess], 
+    [tblAccessList].[OrderNo] AS [OrderNo], 
+    [tblAccessList].[OrderDate] AS [OrderDate], 
+    [tblAccessList].[ValueOfAccess] AS [ValueOfAccess], 
+    [tblAccessList].[WarrantyValue] AS [WarrantyValue], 
+    [tblAccessList].[WarrantyUnit] AS [WarrantyUnit], 
+    [tblAccessList].[StartWarranty] AS [StartWarranty], 
+    [tblAccessList].[EndWarranty] AS [EndWarranty], 
+    [tblAccessList].[PlaceOfWarranty] AS [PlaceOfWarranty], 
+    [tblAccessList].[SupplierCode] AS [SupplierCode], 
+    [tblAccessList].[SupplierName] AS [SupplierName], 
+    [tblAccessList].[Remark] AS [Remark], 
+    [tblAccessList].[CreateDate] AS [CreateDate], 
+    [tblAccessList].[CreateBy] AS [CreateBy], 
+    [tblAccessList].[ModifyDate] AS [ModifyDate], 
+    [tblAccessList].[ModifyBy] AS [ModifyBy], 
+    [tblAccessList].[StatusOnStock] AS [StatusOnStock], 
+    [tblAccessList].[SN] AS [SN], 
+    [tblAccessList].[Branch] AS [Branch], 
+    [tblAccessList].[Department] AS [Department], 
+    [tblAccessList].[Owner] AS [Owner], 
+    [tblAccessList].[AccessAccount] AS [AccessAccount], 
+    [tblAccessList].[ReceiveDate] AS [ReceiveDate]
+    FROM [dbo].[tblAccessList] AS [tblAccessList]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblAccessListDetail" EntityType="Self.tblAccessListDetail" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblAccessListDetail].[AccessNo] AS [AccessNo], 
+    [tblAccessListDetail].[ItemNo] AS [ItemNo], 
+    [tblAccessListDetail].[TypeOfDevice] AS [TypeOfDevice], 
+    [tblAccessListDetail].[NameOfDevice] AS [NameOfDevice], 
+    [tblAccessListDetail].[Price] AS [Price], 
+    [tblAccessListDetail].[OrderNo] AS [OrderNo], 
+    [tblAccessListDetail].[WarrantyValue] AS [WarrantyValue], 
+    [tblAccessListDetail].[WarrantyUnit] AS [WarrantyUnit], 
+    [tblAccessListDetail].[StartWarranty] AS [StartWarranty], 
+    [tblAccessListDetail].[EndWarranty] AS [EndWarranty], 
+    [tblAccessListDetail].[PlaceOfWarranty] AS [PlaceOfWarranty], 
+    [tblAccessListDetail].[SupplierCode] AS [SupplierCode], 
+    [tblAccessListDetail].[SupplierName] AS [SupplierName], 
+    [tblAccessListDetail].[CreateDate] AS [CreateDate], 
+    [tblAccessListDetail].[CreateBy] AS [CreateBy], 
+    [tblAccessListDetail].[ModifyDate] AS [ModifyDate], 
+    [tblAccessListDetail].[ModifyName] AS [ModifyName]
+    FROM [dbo].[tblAccessListDetail] AS [tblAccessListDetail]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblDepartment" EntityType="Self.tblDepartment" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblDepartment].[Branch] AS [Branch], 
+    [tblDepartment].[Party] AS [Party], 
+    [tblDepartment].[Department] AS [Department], 
+    [tblDepartment].[Manager] AS [Manager], 
+    [tblDepartment].[A_Manager] AS [A_Manager], 
+    [tblDepartment].[Status] AS [Status], 
+    [tblDepartment].[Userby] AS [Userby], 
+    [tblDepartment].[Lastupdate] AS [Lastupdate]
+    FROM [dbo].[tblDepartment] AS [tblDepartment]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblMasterCode" EntityType="Self.tblMasterCode" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblMasterCode].[Type] AS [Type], 
+    [tblMasterCode].[Code] AS [Code], 
+    [tblMasterCode].[Description] AS [Description], 
+    [tblMasterCode].[Note] AS [Note], 
+    [tblMasterCode].[FilterInd] AS [FilterInd], 
+    [tblMasterCode].[TypeCode] AS [TypeCode], 
+    [tblMasterCode].[LisenceSum] AS [LisenceSum], 
+    [tblMasterCode].[CreateBy] AS [CreateBy], 
+    [tblMasterCode].[CreateDate] AS [CreateDate], 
+    [tblMasterCode].[UpdateBy] AS [UpdateBy], 
+    [tblMasterCode].[UpdateDate] AS [UpdateDate]
+    FROM [dbo].[tblMasterCode] AS [tblMasterCode]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

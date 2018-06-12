@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2013 for Web
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ITJOB_V.1.0.1", "ITJOB_V.1.0.1\ITJOB_V.1.0.1.vbproj", "{C977925D-B75E-4802-A675-687971660D3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C977925D-B75E-4802-A675-687971660D3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C977925D-B75E-4802-A675-687971660D3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C977925D-B75E-4802-A675-687971660D3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C977925D-B75E-4802-A675-687971660D3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

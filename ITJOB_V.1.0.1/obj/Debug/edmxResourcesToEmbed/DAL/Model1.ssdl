@@ -1,0 +1,1600 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ITmanagementModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.RunningNumber' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="RunningNumber">
+    <Key>
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RunningID" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblAccessList' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblAccessList">
+    <Key>
+      <PropertyRef Name="AccessNo" />
+      <PropertyRef Name="AccessName" />
+    </Key>
+    <Property Name="AccessNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AccessName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="RecordDate" Type="datetime" />
+    <Property Name="TypeofAccess" Type="varchar" MaxLength="50" />
+    <Property Name="OrderNo" Type="varchar" MaxLength="50" />
+    <Property Name="OrderDate" Type="datetime" />
+    <Property Name="ValueOfAccess" Type="float" />
+    <Property Name="WarrantyValue" Type="varchar" MaxLength="50" />
+    <Property Name="WarrantyUnit" Type="varchar" MaxLength="50" />
+    <Property Name="StartWarranty" Type="datetime" />
+    <Property Name="EndWarranty" Type="datetime" />
+    <Property Name="PlaceOfWarranty" Type="varchar" MaxLength="100" />
+    <Property Name="SupplierCode" Type="varchar" MaxLength="50" />
+    <Property Name="SupplierName" Type="varchar" MaxLength="200" />
+    <Property Name="Remark" Type="varchar" MaxLength="250" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="ModifyDate" Type="datetime" />
+    <Property Name="ModifyBy" Type="varchar" MaxLength="50" />
+    <Property Name="StatusOnStock" Type="char" MaxLength="5" />
+    <Property Name="SN" Type="varchar" MaxLength="50" />
+    <Property Name="Branch" Type="varchar" MaxLength="50" />
+    <Property Name="Department" Type="varchar" MaxLength="50" />
+    <Property Name="Owner" Type="varchar" MaxLength="50" />
+    <Property Name="AccessAccount" Type="varchar" MaxLength="50" />
+    <Property Name="ReceiveDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblAccessListDetail' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblAccessListDetail">
+    <Key>
+      <PropertyRef Name="AccessNo" />
+      <PropertyRef Name="ItemNo" />
+      <PropertyRef Name="TypeOfDevice" />
+      <PropertyRef Name="NameOfDevice" />
+    </Key>
+    <Property Name="AccessNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ItemNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TypeOfDevice" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="NameOfDevice" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Price" Type="float" />
+    <Property Name="OrderNo" Type="varchar" MaxLength="50" />
+    <Property Name="WarrantyValue" Type="float" />
+    <Property Name="WarrantyUnit" Type="varchar" MaxLength="50" />
+    <Property Name="StartWarranty" Type="datetime" />
+    <Property Name="EndWarranty" Type="datetime" />
+    <Property Name="PlaceOfWarranty" Type="varchar" MaxLength="200" />
+    <Property Name="SupplierCode" Type="varchar" MaxLength="50" />
+    <Property Name="SupplierName" Type="varchar" MaxLength="200" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="ModifyDate" Type="datetime" />
+    <Property Name="ModifyName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblAccessMA' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblAccessMA">
+    <Key>
+      <PropertyRef Name="AccessNo" />
+      <PropertyRef Name="MAyear" />
+      <PropertyRef Name="Cycle" />
+    </Key>
+    <Property Name="AccessNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MAyear" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="Cycle" Type="int" Nullable="false" />
+    <Property Name="ISMA" Type="int" />
+    <Property Name="MAdate" Type="datetime" />
+    <Property Name="Observe" Type="varchar" MaxLength="1000" />
+    <Property Name="Find" Type="varchar" MaxLength="1000" />
+    <Property Name="Improve" Type="varchar" MaxLength="1000" />
+    <Property Name="UserBy" Type="varchar" MaxLength="50" />
+    <Property Name="UserDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblAccessSoftware' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblAccessSoftware">
+    <Key>
+      <PropertyRef Name="AccessNo" />
+      <PropertyRef Name="Software" />
+    </Key>
+    <Property Name="AccessNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Software" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Issetup" Type="int" />
+    <Property Name="UserBy" Type="varchar" MaxLength="50" />
+    <Property Name="UserDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblCheckBackUp' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblCheckBackUp">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="ServerName" />
+    </Key>
+    <Property Name="ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DateSave" Type="varchar" MaxLength="50" />
+    <Property Name="ServerName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Finished" Type="int" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdateDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblCheckCCTV' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblCheckCCTV">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="IpCCTV" />
+    </Key>
+    <Property Name="ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DateSave" Type="varchar" MaxLength="50" />
+    <Property Name="IpCCTV" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Location" Type="char" MaxLength="10" />
+    <Property Name="StatusConnect" Type="char" MaxLength="10" />
+    <Property Name="StatusRecord" Type="char" MaxLength="10" />
+    <Property Name="Browser" Type="varchar" MaxLength="100" />
+    <Property Name="BrowserStatusCon" Type="char" MaxLength="10" />
+    <Property Name="DateFrom" Type="datetime" />
+    <Property Name="DateTo" Type="datetime" />
+    <Property Name="Sday" Type="int" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdateDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblCheckFireWall' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblCheckFireWall">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="IP" />
+    </Key>
+    <Property Name="ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DateSave" Type="varchar" MaxLength="50" />
+    <Property Name="Device" Type="varchar" MaxLength="50" />
+    <Property Name="IP" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Location" Type="char" MaxLength="10" />
+    <Property Name="WebBrowser" Type="varchar" MaxLength="100" />
+    <Property Name="StatusWAN" Type="char" MaxLength="10" />
+    <Property Name="StatusInternal" Type="char" MaxLength="10" />
+    <Property Name="UtilizationCPU" Type="char" MaxLength="10" />
+    <Property Name="UtilizationMemory" Type="char" MaxLength="10" />
+    <Property Name="StatusCon" Type="char" MaxLength="10" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdateDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblCheckMeterial' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblCheckMeterial">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DateSave" Type="varchar" MaxLength="50" />
+    <Property Name="AirName" Type="varchar" MaxLength="50" />
+    <Property Name="AirLocation" Type="char" MaxLength="50" />
+    <Property Name="TimeAir1" Type="char" MaxLength="50" />
+    <Property Name="TimeAir2" Type="char" MaxLength="50" />
+    <Property Name="TemServerName" Type="varchar" MaxLength="50" />
+    <Property Name="ServerLocation" Type="char" MaxLength="50" />
+    <Property Name="TemDs" Type="char" MaxLength="10" />
+    <Property Name="TemVM" Type="char" MaxLength="10" />
+    <Property Name="TemSAN" Type="char" MaxLength="10" />
+    <Property Name="ADSLName" Type="varchar" MaxLength="50" />
+    <Property Name="ADSLLocal" Type="char" MaxLength="50" />
+    <Property Name="StatusADSL" Type="char" MaxLength="10" />
+    <Property Name="Modem1Name" Type="varchar" MaxLength="50" />
+    <Property Name="Modem1Location" Type="char" MaxLength="50" />
+    <Property Name="Modem1Status1" Type="char" MaxLength="50" />
+    <Property Name="Modem1Status2" Type="char" MaxLength="50" />
+    <Property Name="Modem2Name" Type="varchar" MaxLength="50" />
+    <Property Name="Modem2Location" Type="char" MaxLength="50" />
+    <Property Name="Modem2Status1" Type="char" MaxLength="50" />
+    <Property Name="Modem2Status2" Type="char" MaxLength="50" />
+    <Property Name="GsmName" Type="varchar" MaxLength="50" />
+    <Property Name="GsmLocation" Type="char" MaxLength="50" />
+    <Property Name="GsmStatus1" Type="char" MaxLength="10" />
+    <Property Name="GsmStatus2" Type="char" MaxLength="10" />
+    <Property Name="GsmStatus3" Type="char" MaxLength="10" />
+    <Property Name="GsmStatus4" Type="char" MaxLength="10" />
+    <Property Name="KVMName" Type="varchar" MaxLength="50" />
+    <Property Name="KVMLocation" Type="char" MaxLength="10" />
+    <Property Name="KVMStatus1" Type="char" MaxLength="10" />
+    <Property Name="KVMStatus2" Type="char" MaxLength="10" />
+    <Property Name="KVMStatus3" Type="char" MaxLength="10" />
+    <Property Name="KVMStatus4" Type="char" MaxLength="10" />
+    <Property Name="KVMStatus5" Type="char" MaxLength="10" />
+    <Property Name="KVMStatus6" Type="char" MaxLength="10" />
+    <Property Name="KVMStatus7" Type="char" MaxLength="10" />
+    <Property Name="KVMStatus8" Type="char" MaxLength="10" />
+    <Property Name="HDDName" Type="varchar" MaxLength="50" />
+    <Property Name="HDDLocation" Type="char" MaxLength="10" />
+    <Property Name="HDDStatus1" Type="char" MaxLength="10" />
+    <Property Name="HDDStatus2" Type="char" MaxLength="10" />
+    <Property Name="HDDStatus3" Type="char" MaxLength="10" />
+    <Property Name="HDDStatus4" Type="char" MaxLength="10" />
+    <Property Name="HDDStatus5" Type="char" MaxLength="10" />
+    <Property Name="HDDStatus6" Type="char" MaxLength="10" />
+    <Property Name="MobileName" Type="varchar" MaxLength="50" />
+    <Property Name="MobileIP" Type="varchar" MaxLength="50" />
+    <Property Name="MobileLocation" Type="char" MaxLength="10" />
+    <Property Name="MobileReboot" Type="char" MaxLength="10" />
+    <Property Name="MobileConStatus" Type="char" MaxLength="10" />
+    <Property Name="HWName" Type="varchar" MaxLength="50" />
+    <Property Name="HWIP" Type="varchar" MaxLength="50" />
+    <Property Name="HWLocation" Type="char" MaxLength="10" />
+    <Property Name="HWStatus1" Type="char" MaxLength="10" />
+    <Property Name="NoteHW1" Type="varchar" MaxLength="50" />
+    <Property Name="HWStatus2" Type="char" MaxLength="10" />
+    <Property Name="NoteHW2" Type="varchar" MaxLength="50" />
+    <Property Name="HWStatus3" Type="char" MaxLength="10" />
+    <Property Name="NoteHW3" Type="varchar" MaxLength="50" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdateDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblCheckRouter' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblCheckRouter">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="IP" />
+    </Key>
+    <Property Name="ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DateSave" Type="varchar" MaxLength="50" />
+    <Property Name="RouterName" Type="varchar" MaxLength="50" />
+    <Property Name="IP" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Location" Type="char" MaxLength="10" />
+    <Property Name="StatusLAN" Type="char" MaxLength="10" />
+    <Property Name="StatusWAN" Type="char" MaxLength="10" />
+    <Property Name="ResponseTime" Type="char" MaxLength="10" />
+    <Property Name="UtilizationCPU" Type="char" MaxLength="10" />
+    <Property Name="UtilizationMemory" Type="char" MaxLength="10" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdateDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblCheckServer' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblCheckServer">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="IP" />
+    </Key>
+    <Property Name="ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DateSave" Type="varchar" MaxLength="50" />
+    <Property Name="ServerName" Type="varchar" MaxLength="50" />
+    <Property Name="IP" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Location" Type="char" MaxLength="10" />
+    <Property Name="InterfaceStatus" Type="char" MaxLength="10" />
+    <Property Name="ResponseTime" Type="char" MaxLength="10" />
+    <Property Name="Heat" Type="char" MaxLength="10" />
+    <Property Name="UtilizationCPU" Type="char" MaxLength="10" />
+    <Property Name="UtilizationMemory" Type="char" MaxLength="10" />
+    <Property Name="UtilizationDisk" Type="char" MaxLength="10" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdateDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblCheckSwitch' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblCheckSwitch">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="SwitchName" />
+    </Key>
+    <Property Name="ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DateSave" Type="varchar" MaxLength="50" />
+    <Property Name="SwitchName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SwitchLocation" Type="char" MaxLength="10" />
+    <Property Name="StatusConnect" Type="char" MaxLength="10" />
+    <Property Name="NotePort" Type="varchar" MaxLength="50" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdateDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblDepartment' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblDepartment">
+    <Key>
+      <PropertyRef Name="Branch" />
+      <PropertyRef Name="Party" />
+      <PropertyRef Name="Department" />
+    </Key>
+    <Property Name="Branch" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Party" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Department" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Manager" Type="varchar" MaxLength="50" />
+    <Property Name="A_Manager" Type="varchar" MaxLength="50" />
+    <Property Name="Status" Type="int" />
+    <Property Name="Userby" Type="varchar" MaxLength="50" />
+    <Property Name="Lastupdate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblEmployee' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblEmployee">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" />
+    <Property Name="lastname" Type="varchar" MaxLength="50" />
+    <Property Name="department" Type="varchar" MaxLength="50" />
+    <Property Name="status" Type="int" />
+    <Property Name="branch" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblEmployee_out' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblEmployee_out">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="username" Type="varchar" MaxLength="50" />
+    <Property Name="position_name" Type="varchar" MaxLength="50" />
+    <Property Name="department" Type="varchar" MaxLength="50" />
+    <Property Name="branch" Type="varchar" MaxLength="50" />
+    <Property Name="date_start" Type="datetime" />
+    <Property Name="date_final" Type="datetime" />
+    <Property Name="age" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblEmployee_outdtl' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblEmployee_outdtl">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="emp_card" Type="int" />
+    <Property Name="other_card" Type="int" />
+    <Property Name="date_exp" Type="datetime" />
+    <Property Name="tel" Type="int" />
+    <Property Name="notebook_data" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblGenAutoNo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblGenAutoNo">
+    <Key>
+      <PropertyRef Name="TypeCode" />
+      <PropertyRef Name="MountNo" />
+      <PropertyRef Name="YearNo" />
+      <PropertyRef Name="DigitNo" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="TypeCode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RunNo" Type="varchar" MaxLength="100" />
+    <Property Name="MountNo" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="YearNo" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="DigitNo" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblInventoryItem' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblInventoryItem">
+    <Key>
+      <PropertyRef Name="Itemcode" />
+    </Key>
+    <Property Name="Itemcode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Itemname" Type="varchar" MaxLength="50" />
+    <Property Name="TypeUse" Type="varchar" MaxLength="50" />
+    <Property Name="TypeEquipment" Type="varchar" MaxLength="50" />
+    <Property Name="Price" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Vendor" Type="varchar" MaxLength="50" />
+    <Property Name="Userby" Type="varchar" MaxLength="50" />
+    <Property Name="Lastupdate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblITServiceSparepart' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblITServiceSparepart">
+    <Key>
+      <PropertyRef Name="TicketNo" />
+      <PropertyRef Name="RowID" />
+    </Key>
+    <Property Name="TicketNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RowID" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="RequestOrderDate" Type="datetime" />
+    <Property Name="RequestOrderBy" Type="varchar" MaxLength="50" />
+    <Property Name="ApprovedBy" Type="varchar" MaxLength="50" />
+    <Property Name="RequestOrderDetail" Type="varchar" MaxLength="200" />
+    <Property Name="QTY" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Price" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="VAT" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="SumTotal" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="SupplierName" Type="varchar" MaxLength="200" />
+    <Property Name="QTYVaranty" Type="varchar" MaxLength="50" />
+    <Property Name="UnitVaranty" Type="varchar" MaxLength="50" />
+    <Property Name="FromDate" Type="datetime" />
+    <Property Name="ToDate" Type="datetime" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdateDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblITServiceTicket' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblITServiceTicket">
+    <Key>
+      <PropertyRef Name="TicketNo" />
+    </Key>
+    <Property Name="TicketNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TickDate" Type="datetime" />
+    <Property Name="BranchRequest" Type="varchar" MaxLength="50" />
+    <Property Name="RequestFrom" Type="varchar" MaxLength="50" />
+    <Property Name="RequestBy" Type="varchar" MaxLength="50" />
+    <Property Name="IPAddress" Type="varchar" MaxLength="50" />
+    <Property Name="RemoteType" Type="varchar" MaxLength="50" />
+    <Property Name="AssigeJobTo" Type="varchar" MaxLength="50" />
+    <Property Name="CloseJOBDate" Type="datetime" />
+    <Property Name="JOBStatus" Type="varchar" MaxLength="50" />
+    <Property Name="ComputerName" Type="varchar" MaxLength="50" />
+    <Property Name="JobUserName" Type="varchar" MaxLength="50" />
+    <Property Name="JobPassword" Type="varchar" MaxLength="50" />
+    <Property Name="RequestDetail" Type="varchar" MaxLength="1000" />
+    <Property Name="TotalCostService" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="BackRepairComplete" Type="varchar" MaxLength="200" />
+    <Property Name="Evaluation1" Type="varchar" MaxLength="100" />
+    <Property Name="Evaluation2" Type="varchar" MaxLength="100" />
+    <Property Name="Evaluation3" Type="varchar" MaxLength="100" />
+    <Property Name="Evaluation4" Type="varchar" MaxLength="100" />
+    <Property Name="Evaluation5" Type="varchar" MaxLength="100" />
+    <Property Name="Evaluation6" Type="varchar" MaxLength="100" />
+    <Property Name="EvaluationBy" Type="varchar" MaxLength="50" />
+    <Property Name="EvaluationDate" Type="datetime" />
+    <Property Name="EvaluationRemark" Type="varchar" MaxLength="200" />
+    <Property Name="StatusEvaluation" Type="varchar" MaxLength="50" />
+    <Property Name="TicketType" Type="varchar" MaxLength="50" />
+    <Property Name="OpenDate" Type="datetime" />
+    <Property Name="EstimateDate" Type="datetime" />
+    <Property Name="DateDiffEstimate" Type="int" />
+    <Property Name="CloseDate" Type="datetime" />
+    <Property Name="DateDiff" Type="int" />
+    <Property Name="DepartmentRequest" Type="varchar" MaxLength="50" />
+    <Property Name="RepairNo" Type="varchar" MaxLength="10" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdateDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblITServiceTicketDetail' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblITServiceTicketDetail">
+    <Key>
+      <PropertyRef Name="TicketNo" />
+      <PropertyRef Name="RowID" />
+    </Key>
+    <Property Name="TicketNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RowID" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="AnalyDetail" Type="varchar" MaxLength="200" />
+    <Property Name="RepairDetail" Type="varchar" MaxLength="300" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdateDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblMasterCode' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblMasterCode">
+    <Key>
+      <PropertyRef Name="Type" />
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="Type" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="200" />
+    <Property Name="Note" Type="varchar" MaxLength="200" />
+    <Property Name="FilterInd" Type="varchar" MaxLength="50" />
+    <Property Name="TypeCode" Type="varchar" MaxLength="50" />
+    <Property Name="LisenceSum" Type="int" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdateDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblMenu' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblMenu">
+    <Key>
+      <PropertyRef Name="Program" />
+    </Key>
+    <Property Name="Program" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="50" />
+    <Property Name="UserBy" Type="varchar" MaxLength="50" />
+    <Property Name="LastUpdate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblOutSiteService' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblOutSiteService">
+    <Key>
+      <PropertyRef Name="ServiceTicketNo" />
+      <PropertyRef Name="ServiceDate" />
+    </Key>
+    <Property Name="ServiceTicketNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ServiceDate" Type="datetime" Nullable="false" />
+    <Property Name="OwnerName" Type="varchar" MaxLength="250" />
+    <Property Name="ITName" Type="varchar" MaxLength="250" />
+    <Property Name="PlaceOfService" Type="varchar" MaxLength="250" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="ModifyBy" Type="varchar" MaxLength="50" />
+    <Property Name="ModifyDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblOutSiteServiceDetail' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblOutSiteServiceDetail">
+    <Key>
+      <PropertyRef Name="ServiceTicketNo" />
+      <PropertyRef Name="ItemNo" />
+    </Key>
+    <Property Name="ServiceTicketNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ItemNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description1" Type="varchar" MaxLength="250" />
+    <Property Name="Description2" Type="varchar" MaxLength="250" />
+    <Property Name="Description3" Type="varchar" MaxLength="250" />
+    <Property Name="Remarks" Type="varchar" MaxLength="250" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="ModifyBy" Type="varchar" MaxLength="50" />
+    <Property Name="ModifyDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblOutSourceService' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblOutSourceService">
+    <Key>
+      <PropertyRef Name="TicketNo" />
+      <PropertyRef Name="ServiceNo" />
+    </Key>
+    <Property Name="TicketNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ServiceNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ServiceDate" Type="datetime" />
+    <Property Name="SupplierCode" Type="varchar" MaxLength="50" />
+    <Property Name="SupplierName" Type="varchar" MaxLength="200" />
+    <Property Name="ReceivedDate" Type="datetime" />
+    <Property Name="ReceivedBy" Type="varchar" MaxLength="100" />
+    <Property Name="Description1" Type="varchar" MaxLength="250" />
+    <Property Name="Description2" Type="varchar" MaxLength="250" />
+    <Property Name="EstimateDate" Type="datetime" />
+    <Property Name="ActualDate" Type="datetime" />
+    <Property Name="QtyOfWaranty" Type="int" />
+    <Property Name="UnitWaranty" Type="varchar" MaxLength="50" />
+    <Property Name="StartWaranty" Type="datetime" />
+    <Property Name="EndWaranty" Type="datetime" />
+    <Property Name="EstimatePrice" Type="float" />
+    <Property Name="ActualPrice" Type="float" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="ModifyBy" Type="varchar" MaxLength="50" />
+    <Property Name="ModifyDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblOutSourceServiceDetail' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblOutSourceServiceDetail">
+    <Key>
+      <PropertyRef Name="TicketNo" />
+      <PropertyRef Name="ServiceNo" />
+      <PropertyRef Name="ItemNo" />
+    </Key>
+    <Property Name="TicketNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ServiceNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ItemNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="250" />
+    <Property Name="QTY" Type="int" />
+    <Property Name="Price" Type="float" />
+    <Property Name="VAT" Type="int" />
+    <Property Name="Amount" Type="float" />
+    <Property Name="Remarks" Type="varchar" MaxLength="250" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="ModifyBy" Type="varchar" MaxLength="50" />
+    <Property Name="ModifyDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblParty' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblParty">
+    <Key>
+      <PropertyRef Name="PartyCode" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="PartyCode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PartyFullName" Type="varchar" MaxLength="200" />
+    <Property Name="PartyLocalCode" Type="varchar" MaxLength="50" />
+    <Property Name="PartyLocalName" Type="varchar" MaxLength="200" />
+    <Property Name="PartyLocation" Type="varchar" MaxLength="50" />
+    <Property Name="PartyCountry" Type="varchar" MaxLength="50" />
+    <Property Name="RegistrationNo" Type="varchar" MaxLength="50" />
+    <Property Name="PartyTypeCode" Type="varchar" MaxLength="50" />
+    <Property Name="PartyTypeName" Type="varchar" MaxLength="200" />
+    <Property Name="CommissionToSales" Type="varchar" MaxLength="50" />
+    <Property Name="IATACode" Type="varchar" MaxLength="50" />
+    <Property Name="Remarks" Type="varchar" MaxLength="200" />
+    <Property Name="PartyStatus" Type="varchar" MaxLength="50" />
+    <Property Name="MessageHubID" Type="varchar" MaxLength="50" />
+    <Property Name="OtherSystemPartyID" Type="varchar" MaxLength="50" />
+    <Property Name="FormID" Type="varchar" MaxLength="50" />
+    <Property Name="Shipper" Type="varchar" MaxLength="50" />
+    <Property Name="Consignee" Type="varchar" MaxLength="50" />
+    <Property Name="Branch_Agent" Type="varchar" MaxLength="50" />
+    <Property Name="Co_Loader" Type="varchar" MaxLength="50" />
+    <Property Name="Trucking" Type="varchar" MaxLength="50" />
+    <Property Name="ShippingLine" Type="varchar" MaxLength="50" />
+    <Property Name="Vendor" Type="varchar" MaxLength="50" />
+    <Property Name="ContainerYard" Type="varchar" MaxLength="50" />
+    <Property Name="Warehouse" Type="varchar" MaxLength="50" />
+    <Property Name="Bank" Type="varchar" MaxLength="50" />
+    <Property Name="Factory" Type="varchar" MaxLength="50" />
+    <Property Name="Customer" Type="varchar" MaxLength="50" />
+    <Property Name="Broker" Type="varchar" MaxLength="50" />
+    <Property Name="AirLine" Type="varchar" MaxLength="50" />
+    <Property Name="EndCustomer" Type="varchar" MaxLength="50" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblPartyAddress' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblPartyAddress">
+    <Key>
+      <PropertyRef Name="PartyAddressCode" />
+      <PropertyRef Name="PartyCode" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="PartyAddressCode" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="PartyCode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AddressType" Type="varchar" MaxLength="50" />
+    <Property Name="Address1" Type="varchar" MaxLength="200" />
+    <Property Name="Address2" Type="varchar" MaxLength="200" />
+    <Property Name="Address3" Type="varchar" MaxLength="200" />
+    <Property Name="Address4" Type="varchar" MaxLength="200" />
+    <Property Name="ZipCode" Type="varchar" MaxLength="50" />
+    <Property Name="AreaCode" Type="varchar" MaxLength="50" />
+    <Property Name="Attn" Type="varchar" MaxLength="200" />
+    <Property Name="Tel" Type="varchar" MaxLength="100" />
+    <Property Name="Fax" Type="varchar" MaxLength="100" />
+    <Property Name="Web" Type="varchar" MaxLength="100" />
+    <Property Name="email" Type="varchar" MaxLength="200" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblPurchaseRequistionDtl' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblPurchaseRequistionDtl">
+    <Key>
+      <PropertyRef Name="PRPHNO" />
+      <PropertyRef Name="Itemcode" />
+    </Key>
+    <Property Name="PRPHNO" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Itemcode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Qty" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="QtyUnit" Type="varchar" MaxLength="50" />
+    <Property Name="Userby" Type="varchar" MaxLength="50" />
+    <Property Name="LastUpdate" Type="datetime" />
+    <Property Name="Detail" Type="varchar" MaxLength="300" />
+    <Property Name="Price" Type="decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblPurchaseRequistionHdr' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblPurchaseRequistionHdr">
+    <Key>
+      <PropertyRef Name="PRPHNo" />
+    </Key>
+    <Property Name="PRPHNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsPR" Type="int" />
+    <Property Name="ApproveDate" Type="datetime" />
+    <Property Name="DateBuy" Type="datetime" />
+    <Property Name="DateRequire" Type="datetime" />
+    <Property Name="Department" Type="varchar" MaxLength="50" />
+    <Property Name="Party" Type="varchar" MaxLength="50" />
+    <Property Name="Branch" Type="varchar" MaxLength="50" />
+    <Property Name="UserApp1" Type="varchar" MaxLength="50" />
+    <Property Name="UserApp2" Type="varchar" MaxLength="50" />
+    <Property Name="status" Type="int" />
+    <Property Name="Createby" Type="varchar" MaxLength="50" />
+    <Property Name="Createdate" Type="datetime" />
+    <Property Name="Userby" Type="varchar" MaxLength="50" />
+    <Property Name="Lastupdate" Type="datetime" />
+    <Property Name="StatusMail" Type="int" />
+    <Property Name="ApproveBy" Type="varchar" MaxLength="50" />
+    <Property Name="StatusCancel" Type="int" />
+    <Property Name="UserNameApp1" Type="varchar" MaxLength="50" />
+    <Property Name="UserNameApp2" Type="varchar" MaxLength="50" />
+    <Property Name="UserApp3" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblRecordProduct' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblRecordProduct">
+    <Key>
+      <PropertyRef Name="SNNo" />
+    </Key>
+    <Property Name="SNNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Ishw" Type="int" />
+    <Property Name="IsStock" Type="int" />
+    <Property Name="ItemCodeNO" Type="varchar" MaxLength="50" />
+    <Property Name="Type" Type="char" MaxLength="20" />
+    <Property Name="Location" Type="char" MaxLength="20" />
+    <Property Name="Detail" Type="varchar" MaxLength="200" />
+    <Property Name="StartGuarantee" Type="datetime" />
+    <Property Name="EndGuarantee" Type="datetime" />
+    <Property Name="Remark" Type="varchar" MaxLength="200" />
+    <Property Name="CreatBy" Type="varchar" MaxLength="30" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="30" />
+    <Property Name="UpdateDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblRecordProductDtl' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblRecordProductDtl">
+    <Key>
+      <PropertyRef Name="SNno" />
+      <PropertyRef Name="RepairNo" />
+    </Key>
+    <Property Name="SNno" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RepairNo" Type="int" Nullable="false" />
+    <Property Name="ServiceName" Type="varchar" MaxLength="50" />
+    <Property Name="RepairDate" Type="datetime" />
+    <Property Name="StatusRepair" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblRentDevice' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblRentDevice">
+    <Key>
+      <PropertyRef Name="RentNo" />
+      <PropertyRef Name="RentOwner" />
+    </Key>
+    <Property Name="RentNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RentDate" Type="datetime" />
+    <Property Name="RentOwner" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="DeptOwner" Type="varchar" MaxLength="50" />
+    <Property Name="IssuedBy" Type="varchar" MaxLength="100" />
+    <Property Name="IssuedDate" Type="datetime" />
+    <Property Name="ReceivedBy" Type="varchar" MaxLength="100" />
+    <Property Name="ReceivedDate" Type="datetime" />
+    <Property Name="ObjectiveofRent" Type="varchar" MaxLength="250" />
+    <Property Name="PlaceOfUsed" Type="varchar" MaxLength="200" />
+    <Property Name="StatusFinish" Type="varchar" MaxLength="50" />
+    <Property Name="Remarks" Type="varchar" MaxLength="250" />
+    <Property Name="StatusOfRent" Type="varchar" MaxLength="50" />
+    <Property Name="CreatBy" Type="varchar" MaxLength="30" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="30" />
+    <Property Name="UpdateDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblRentDeviceDetail' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblRentDeviceDetail">
+    <Key>
+      <PropertyRef Name="RentNo" />
+      <PropertyRef Name="ItemNo" />
+      <PropertyRef Name="TypeDevice" />
+    </Key>
+    <Property Name="RentNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ItemNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TypeDevice" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="AccessCode" Type="varchar" MaxLength="50" />
+    <Property Name="AccessName" Type="varchar" MaxLength="200" />
+    <Property Name="Qty" Type="int" />
+    <Property Name="AccessoryOfDevice" Type="varchar" MaxLength="250" />
+    <Property Name="Remarks" Type="varchar" MaxLength="250" />
+    <Property Name="StatusOfRent" Type="varchar" MaxLength="50" />
+    <Property Name="CreatBy" Type="varchar" MaxLength="30" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="30" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="FirstRent" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblRepair' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblRepair">
+    <Key>
+      <PropertyRef Name="RepairNo" />
+    </Key>
+    <Property Name="RepairNo" Type="varchar" MaxLength="7" Nullable="false" />
+    <Property Name="Type" Type="int" />
+    <Property Name="Branch" Type="varchar" MaxLength="15" />
+    <Property Name="Depart" Type="varchar" MaxLength="20" />
+    <Property Name="Asset" Type="varchar" MaxLength="20" />
+    <Property Name="Qty" Type="decimal" Precision="10" Scale="0" />
+    <Property Name="PlaceUse" Type="varchar" MaxLength="100" />
+    <Property Name="Ruined" Type="varchar" MaxLength="200" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Approve" Type="int" />
+    <Property Name="ApproveName" Type="varchar" MaxLength="30" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblRepairDetail' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblRepairDetail">
+    <Key>
+      <PropertyRef Name="RepairNo" />
+    </Key>
+    <Property Name="RepairNo" Type="varchar" MaxLength="7" Nullable="false" />
+    <Property Name="DateCompany" Type="datetime" />
+    <Property Name="DateRepair" Type="datetime" />
+    <Property Name="TimeRepair" Type="varchar" MaxLength="10" />
+    <Property Name="CompanyRepair" Type="varchar" MaxLength="50" />
+    <Property Name="CompanyPhone" Type="varchar" MaxLength="10" />
+    <Property Name="RepairMan" Type="varchar" MaxLength="30" />
+    <Property Name="RepairManPhone" Type="varchar" MaxLength="10" />
+    <Property Name="TypePrice" Type="int" />
+    <Property Name="Warranty" Type="int" />
+    <Property Name="PriceAll" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="AppPrice" Type="varchar" MaxLength="30" />
+    <Property Name="DateRepairMan" Type="datetime" />
+    <Property Name="TimeRepairMan" Type="varchar" MaxLength="10" />
+    <Property Name="Normal" Type="int" />
+    <Property Name="AbNormal" Type="varchar" MaxLength="200" />
+    <Property Name="Note" Type="varchar" MaxLength="200" />
+    <Property Name="ManCheck" Type="varchar" MaxLength="20" />
+    <Property Name="DateCheck" Type="datetime" />
+    <Property Name="UserBy" Type="varchar" MaxLength="20" />
+    <Property Name="UserDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblUser' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblUser">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="UserName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" />
+    <Property Name="Dept" Type="varchar" MaxLength="100" />
+    <Property Name="Branch" Type="varchar" MaxLength="100" />
+    <Property Name="Party" Type="varchar" MaxLength="50" />
+    <Property Name="Password" Type="varchar" MaxLength="100" />
+    <Property Name="Mail" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblUserGroup' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblUserGroup">
+    <Key>
+      <PropertyRef Name="UserGroupCode" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="UserGroupCode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserGroupName" Type="varchar" MaxLength="100" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ITmanagement.dbo.tblUserMenu' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblUserMenu">
+    <Key>
+      <PropertyRef Name="UserName" />
+      <PropertyRef Name="Program" />
+    </Key>
+    <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Program" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="status" Type="int" />
+    <Property Name="UserBy" Type="varchar" MaxLength="50" />
+    <Property Name="LastUpdate" Type="datetime" />
+  </EntityType>
+  <EntityContainer Name="ITmanagementModelStoreContainer">
+    <EntitySet Name="RunningNumber" EntityType="Self.RunningNumber" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [RunningNumber].[Name] AS [Name], 
+    [RunningNumber].[RunningID] AS [RunningID]
+    FROM [dbo].[RunningNumber] AS [RunningNumber]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblAccessList" EntityType="Self.tblAccessList" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblAccessList].[AccessNo] AS [AccessNo], 
+    [tblAccessList].[AccessName] AS [AccessName], 
+    [tblAccessList].[RecordDate] AS [RecordDate], 
+    [tblAccessList].[TypeofAccess] AS [TypeofAccess], 
+    [tblAccessList].[OrderNo] AS [OrderNo], 
+    [tblAccessList].[OrderDate] AS [OrderDate], 
+    [tblAccessList].[ValueOfAccess] AS [ValueOfAccess], 
+    [tblAccessList].[WarrantyValue] AS [WarrantyValue], 
+    [tblAccessList].[WarrantyUnit] AS [WarrantyUnit], 
+    [tblAccessList].[StartWarranty] AS [StartWarranty], 
+    [tblAccessList].[EndWarranty] AS [EndWarranty], 
+    [tblAccessList].[PlaceOfWarranty] AS [PlaceOfWarranty], 
+    [tblAccessList].[SupplierCode] AS [SupplierCode], 
+    [tblAccessList].[SupplierName] AS [SupplierName], 
+    [tblAccessList].[Remark] AS [Remark], 
+    [tblAccessList].[CreateDate] AS [CreateDate], 
+    [tblAccessList].[CreateBy] AS [CreateBy], 
+    [tblAccessList].[ModifyDate] AS [ModifyDate], 
+    [tblAccessList].[ModifyBy] AS [ModifyBy], 
+    [tblAccessList].[StatusOnStock] AS [StatusOnStock], 
+    [tblAccessList].[SN] AS [SN], 
+    [tblAccessList].[Branch] AS [Branch], 
+    [tblAccessList].[Department] AS [Department], 
+    [tblAccessList].[Owner] AS [Owner], 
+    [tblAccessList].[AccessAccount] AS [AccessAccount], 
+    [tblAccessList].[ReceiveDate] AS [ReceiveDate]
+    FROM [dbo].[tblAccessList] AS [tblAccessList]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblAccessListDetail" EntityType="Self.tblAccessListDetail" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblAccessListDetail].[AccessNo] AS [AccessNo], 
+    [tblAccessListDetail].[ItemNo] AS [ItemNo], 
+    [tblAccessListDetail].[TypeOfDevice] AS [TypeOfDevice], 
+    [tblAccessListDetail].[NameOfDevice] AS [NameOfDevice], 
+    [tblAccessListDetail].[Price] AS [Price], 
+    [tblAccessListDetail].[OrderNo] AS [OrderNo], 
+    [tblAccessListDetail].[WarrantyValue] AS [WarrantyValue], 
+    [tblAccessListDetail].[WarrantyUnit] AS [WarrantyUnit], 
+    [tblAccessListDetail].[StartWarranty] AS [StartWarranty], 
+    [tblAccessListDetail].[EndWarranty] AS [EndWarranty], 
+    [tblAccessListDetail].[PlaceOfWarranty] AS [PlaceOfWarranty], 
+    [tblAccessListDetail].[SupplierCode] AS [SupplierCode], 
+    [tblAccessListDetail].[SupplierName] AS [SupplierName], 
+    [tblAccessListDetail].[CreateDate] AS [CreateDate], 
+    [tblAccessListDetail].[CreateBy] AS [CreateBy], 
+    [tblAccessListDetail].[ModifyDate] AS [ModifyDate], 
+    [tblAccessListDetail].[ModifyName] AS [ModifyName]
+    FROM [dbo].[tblAccessListDetail] AS [tblAccessListDetail]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblAccessMA" EntityType="Self.tblAccessMA" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblAccessMA].[AccessNo] AS [AccessNo], 
+    [tblAccessMA].[MAyear] AS [MAyear], 
+    [tblAccessMA].[Cycle] AS [Cycle], 
+    [tblAccessMA].[ISMA] AS [ISMA], 
+    [tblAccessMA].[MAdate] AS [MAdate], 
+    [tblAccessMA].[Observe] AS [Observe], 
+    [tblAccessMA].[Find] AS [Find], 
+    [tblAccessMA].[Improve] AS [Improve], 
+    [tblAccessMA].[UserBy] AS [UserBy], 
+    [tblAccessMA].[UserDate] AS [UserDate]
+    FROM [dbo].[tblAccessMA] AS [tblAccessMA]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblAccessSoftware" EntityType="Self.tblAccessSoftware" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblAccessSoftware].[AccessNo] AS [AccessNo], 
+    [tblAccessSoftware].[Software] AS [Software], 
+    [tblAccessSoftware].[Issetup] AS [Issetup], 
+    [tblAccessSoftware].[UserBy] AS [UserBy], 
+    [tblAccessSoftware].[UserDate] AS [UserDate]
+    FROM [dbo].[tblAccessSoftware] AS [tblAccessSoftware]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblCheckBackUp" EntityType="Self.tblCheckBackUp" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblCheckBackUp].[ID] AS [ID], 
+    [tblCheckBackUp].[DateSave] AS [DateSave], 
+    [tblCheckBackUp].[ServerName] AS [ServerName], 
+    [tblCheckBackUp].[Finished] AS [Finished], 
+    [tblCheckBackUp].[CreateBy] AS [CreateBy], 
+    [tblCheckBackUp].[CreateDate] AS [CreateDate], 
+    [tblCheckBackUp].[UpdateBy] AS [UpdateBy], 
+    [tblCheckBackUp].[UpdateDate] AS [UpdateDate]
+    FROM [dbo].[tblCheckBackUp] AS [tblCheckBackUp]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblCheckCCTV" EntityType="Self.tblCheckCCTV" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblCheckCCTV].[ID] AS [ID], 
+    [tblCheckCCTV].[DateSave] AS [DateSave], 
+    [tblCheckCCTV].[IpCCTV] AS [IpCCTV], 
+    [tblCheckCCTV].[Location] AS [Location], 
+    [tblCheckCCTV].[StatusConnect] AS [StatusConnect], 
+    [tblCheckCCTV].[StatusRecord] AS [StatusRecord], 
+    [tblCheckCCTV].[Browser] AS [Browser], 
+    [tblCheckCCTV].[BrowserStatusCon] AS [BrowserStatusCon], 
+    [tblCheckCCTV].[DateFrom] AS [DateFrom], 
+    [tblCheckCCTV].[DateTo] AS [DateTo], 
+    [tblCheckCCTV].[Sday] AS [Sday], 
+    [tblCheckCCTV].[CreateBy] AS [CreateBy], 
+    [tblCheckCCTV].[CreateDate] AS [CreateDate], 
+    [tblCheckCCTV].[UpdateBy] AS [UpdateBy], 
+    [tblCheckCCTV].[UpdateDate] AS [UpdateDate]
+    FROM [dbo].[tblCheckCCTV] AS [tblCheckCCTV]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblCheckFireWall" EntityType="Self.tblCheckFireWall" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblCheckFireWall].[ID] AS [ID], 
+    [tblCheckFireWall].[DateSave] AS [DateSave], 
+    [tblCheckFireWall].[Device] AS [Device], 
+    [tblCheckFireWall].[IP] AS [IP], 
+    [tblCheckFireWall].[Location] AS [Location], 
+    [tblCheckFireWall].[WebBrowser] AS [WebBrowser], 
+    [tblCheckFireWall].[StatusWAN] AS [StatusWAN], 
+    [tblCheckFireWall].[StatusInternal] AS [StatusInternal], 
+    [tblCheckFireWall].[UtilizationCPU] AS [UtilizationCPU], 
+    [tblCheckFireWall].[UtilizationMemory] AS [UtilizationMemory], 
+    [tblCheckFireWall].[StatusCon] AS [StatusCon], 
+    [tblCheckFireWall].[CreateBy] AS [CreateBy], 
+    [tblCheckFireWall].[CreateDate] AS [CreateDate], 
+    [tblCheckFireWall].[UpdateBy] AS [UpdateBy], 
+    [tblCheckFireWall].[UpdateDate] AS [UpdateDate]
+    FROM [dbo].[tblCheckFireWall] AS [tblCheckFireWall]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblCheckMeterial" EntityType="Self.tblCheckMeterial" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblCheckMeterial].[ID] AS [ID], 
+    [tblCheckMeterial].[DateSave] AS [DateSave], 
+    [tblCheckMeterial].[AirName] AS [AirName], 
+    [tblCheckMeterial].[AirLocation] AS [AirLocation], 
+    [tblCheckMeterial].[TimeAir1] AS [TimeAir1], 
+    [tblCheckMeterial].[TimeAir2] AS [TimeAir2], 
+    [tblCheckMeterial].[TemServerName] AS [TemServerName], 
+    [tblCheckMeterial].[ServerLocation] AS [ServerLocation], 
+    [tblCheckMeterial].[TemDs] AS [TemDs], 
+    [tblCheckMeterial].[TemVM] AS [TemVM], 
+    [tblCheckMeterial].[TemSAN] AS [TemSAN], 
+    [tblCheckMeterial].[ADSLName] AS [ADSLName], 
+    [tblCheckMeterial].[ADSLLocal] AS [ADSLLocal], 
+    [tblCheckMeterial].[StatusADSL] AS [StatusADSL], 
+    [tblCheckMeterial].[Modem1Name] AS [Modem1Name], 
+    [tblCheckMeterial].[Modem1Location] AS [Modem1Location], 
+    [tblCheckMeterial].[Modem1Status1] AS [Modem1Status1], 
+    [tblCheckMeterial].[Modem1Status2] AS [Modem1Status2], 
+    [tblCheckMeterial].[Modem2Name] AS [Modem2Name], 
+    [tblCheckMeterial].[Modem2Location] AS [Modem2Location], 
+    [tblCheckMeterial].[Modem2Status1] AS [Modem2Status1], 
+    [tblCheckMeterial].[Modem2Status2] AS [Modem2Status2], 
+    [tblCheckMeterial].[GsmName] AS [GsmName], 
+    [tblCheckMeterial].[GsmLocation] AS [GsmLocation], 
+    [tblCheckMeterial].[GsmStatus1] AS [GsmStatus1], 
+    [tblCheckMeterial].[GsmStatus2] AS [GsmStatus2], 
+    [tblCheckMeterial].[GsmStatus3] AS [GsmStatus3], 
+    [tblCheckMeterial].[GsmStatus4] AS [GsmStatus4], 
+    [tblCheckMeterial].[KVMName] AS [KVMName], 
+    [tblCheckMeterial].[KVMLocation] AS [KVMLocation], 
+    [tblCheckMeterial].[KVMStatus1] AS [KVMStatus1], 
+    [tblCheckMeterial].[KVMStatus2] AS [KVMStatus2], 
+    [tblCheckMeterial].[KVMStatus3] AS [KVMStatus3], 
+    [tblCheckMeterial].[KVMStatus4] AS [KVMStatus4], 
+    [tblCheckMeterial].[KVMStatus5] AS [KVMStatus5], 
+    [tblCheckMeterial].[KVMStatus6] AS [KVMStatus6], 
+    [tblCheckMeterial].[KVMStatus7] AS [KVMStatus7], 
+    [tblCheckMeterial].[KVMStatus8] AS [KVMStatus8], 
+    [tblCheckMeterial].[HDDName] AS [HDDName], 
+    [tblCheckMeterial].[HDDLocation] AS [HDDLocation], 
+    [tblCheckMeterial].[HDDStatus1] AS [HDDStatus1], 
+    [tblCheckMeterial].[HDDStatus2] AS [HDDStatus2], 
+    [tblCheckMeterial].[HDDStatus3] AS [HDDStatus3], 
+    [tblCheckMeterial].[HDDStatus4] AS [HDDStatus4], 
+    [tblCheckMeterial].[HDDStatus5] AS [HDDStatus5], 
+    [tblCheckMeterial].[HDDStatus6] AS [HDDStatus6], 
+    [tblCheckMeterial].[MobileName] AS [MobileName], 
+    [tblCheckMeterial].[MobileIP] AS [MobileIP], 
+    [tblCheckMeterial].[MobileLocation] AS [MobileLocation], 
+    [tblCheckMeterial].[MobileReboot] AS [MobileReboot], 
+    [tblCheckMeterial].[MobileConStatus] AS [MobileConStatus], 
+    [tblCheckMeterial].[HWName] AS [HWName], 
+    [tblCheckMeterial].[HWIP] AS [HWIP], 
+    [tblCheckMeterial].[HWLocation] AS [HWLocation], 
+    [tblCheckMeterial].[HWStatus1] AS [HWStatus1], 
+    [tblCheckMeterial].[NoteHW1] AS [NoteHW1], 
+    [tblCheckMeterial].[HWStatus2] AS [HWStatus2], 
+    [tblCheckMeterial].[NoteHW2] AS [NoteHW2], 
+    [tblCheckMeterial].[HWStatus3] AS [HWStatus3], 
+    [tblCheckMeterial].[NoteHW3] AS [NoteHW3], 
+    [tblCheckMeterial].[CreateBy] AS [CreateBy], 
+    [tblCheckMeterial].[CreateDate] AS [CreateDate], 
+    [tblCheckMeterial].[UpdateBy] AS [UpdateBy], 
+    [tblCheckMeterial].[UpdateDate] AS [UpdateDate]
+    FROM [dbo].[tblCheckMeterial] AS [tblCheckMeterial]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblCheckRouter" EntityType="Self.tblCheckRouter" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblCheckRouter].[ID] AS [ID], 
+    [tblCheckRouter].[DateSave] AS [DateSave], 
+    [tblCheckRouter].[RouterName] AS [RouterName], 
+    [tblCheckRouter].[IP] AS [IP], 
+    [tblCheckRouter].[Location] AS [Location], 
+    [tblCheckRouter].[StatusLAN] AS [StatusLAN], 
+    [tblCheckRouter].[StatusWAN] AS [StatusWAN], 
+    [tblCheckRouter].[ResponseTime] AS [ResponseTime], 
+    [tblCheckRouter].[UtilizationCPU] AS [UtilizationCPU], 
+    [tblCheckRouter].[UtilizationMemory] AS [UtilizationMemory], 
+    [tblCheckRouter].[CreateBy] AS [CreateBy], 
+    [tblCheckRouter].[CreateDate] AS [CreateDate], 
+    [tblCheckRouter].[UpdateBy] AS [UpdateBy], 
+    [tblCheckRouter].[UpdateDate] AS [UpdateDate]
+    FROM [dbo].[tblCheckRouter] AS [tblCheckRouter]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblCheckServer" EntityType="Self.tblCheckServer" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblCheckServer].[ID] AS [ID], 
+    [tblCheckServer].[DateSave] AS [DateSave], 
+    [tblCheckServer].[ServerName] AS [ServerName], 
+    [tblCheckServer].[IP] AS [IP], 
+    [tblCheckServer].[Location] AS [Location], 
+    [tblCheckServer].[InterfaceStatus] AS [InterfaceStatus], 
+    [tblCheckServer].[ResponseTime] AS [ResponseTime], 
+    [tblCheckServer].[Heat] AS [Heat], 
+    [tblCheckServer].[UtilizationCPU] AS [UtilizationCPU], 
+    [tblCheckServer].[UtilizationMemory] AS [UtilizationMemory], 
+    [tblCheckServer].[UtilizationDisk] AS [UtilizationDisk], 
+    [tblCheckServer].[CreateBy] AS [CreateBy], 
+    [tblCheckServer].[CreateDate] AS [CreateDate], 
+    [tblCheckServer].[UpdateBy] AS [UpdateBy], 
+    [tblCheckServer].[UpdateDate] AS [UpdateDate]
+    FROM [dbo].[tblCheckServer] AS [tblCheckServer]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblCheckSwitch" EntityType="Self.tblCheckSwitch" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblCheckSwitch].[ID] AS [ID], 
+    [tblCheckSwitch].[DateSave] AS [DateSave], 
+    [tblCheckSwitch].[SwitchName] AS [SwitchName], 
+    [tblCheckSwitch].[SwitchLocation] AS [SwitchLocation], 
+    [tblCheckSwitch].[StatusConnect] AS [StatusConnect], 
+    [tblCheckSwitch].[NotePort] AS [NotePort], 
+    [tblCheckSwitch].[CreateBy] AS [CreateBy], 
+    [tblCheckSwitch].[CreateDate] AS [CreateDate], 
+    [tblCheckSwitch].[UpdateBy] AS [UpdateBy], 
+    [tblCheckSwitch].[UpdateDate] AS [UpdateDate]
+    FROM [dbo].[tblCheckSwitch] AS [tblCheckSwitch]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblDepartment" EntityType="Self.tblDepartment" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblDepartment].[Branch] AS [Branch], 
+    [tblDepartment].[Party] AS [Party], 
+    [tblDepartment].[Department] AS [Department], 
+    [tblDepartment].[Manager] AS [Manager], 
+    [tblDepartment].[A_Manager] AS [A_Manager], 
+    [tblDepartment].[Status] AS [Status], 
+    [tblDepartment].[Userby] AS [Userby], 
+    [tblDepartment].[Lastupdate] AS [Lastupdate]
+    FROM [dbo].[tblDepartment] AS [tblDepartment]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblEmployee" EntityType="Self.tblEmployee" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblEmployee].[id] AS [id], 
+    [tblEmployee].[name] AS [name], 
+    [tblEmployee].[lastname] AS [lastname], 
+    [tblEmployee].[department] AS [department], 
+    [tblEmployee].[status] AS [status], 
+    [tblEmployee].[branch] AS [branch]
+    FROM [dbo].[tblEmployee] AS [tblEmployee]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblEmployee_out" EntityType="Self.tblEmployee_out" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblEmployee_out].[id] AS [id], 
+    [tblEmployee_out].[username] AS [username], 
+    [tblEmployee_out].[position_name] AS [position_name], 
+    [tblEmployee_out].[department] AS [department], 
+    [tblEmployee_out].[branch] AS [branch], 
+    [tblEmployee_out].[date_start] AS [date_start], 
+    [tblEmployee_out].[date_final] AS [date_final], 
+    [tblEmployee_out].[age] AS [age]
+    FROM [dbo].[tblEmployee_out] AS [tblEmployee_out]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblEmployee_outdtl" EntityType="Self.tblEmployee_outdtl" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblEmployee_outdtl].[id] AS [id], 
+    [tblEmployee_outdtl].[emp_card] AS [emp_card], 
+    [tblEmployee_outdtl].[other_card] AS [other_card], 
+    [tblEmployee_outdtl].[date_exp] AS [date_exp], 
+    [tblEmployee_outdtl].[tel] AS [tel], 
+    [tblEmployee_outdtl].[notebook_data] AS [notebook_data]
+    FROM [dbo].[tblEmployee_outdtl] AS [tblEmployee_outdtl]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblGenAutoNo" EntityType="Self.tblGenAutoNo" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblGenAutoNo].[TypeCode] AS [TypeCode], 
+    [tblGenAutoNo].[RunNo] AS [RunNo], 
+    [tblGenAutoNo].[MountNo] AS [MountNo], 
+    [tblGenAutoNo].[YearNo] AS [YearNo], 
+    [tblGenAutoNo].[DigitNo] AS [DigitNo], 
+    [tblGenAutoNo].[rowguid] AS [rowguid]
+    FROM [dbo].[tblGenAutoNo] AS [tblGenAutoNo]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblInventoryItem" EntityType="Self.tblInventoryItem" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblInventoryItem].[Itemcode] AS [Itemcode], 
+    [tblInventoryItem].[Itemname] AS [Itemname], 
+    [tblInventoryItem].[TypeUse] AS [TypeUse], 
+    [tblInventoryItem].[TypeEquipment] AS [TypeEquipment], 
+    [tblInventoryItem].[Price] AS [Price], 
+    [tblInventoryItem].[Vendor] AS [Vendor], 
+    [tblInventoryItem].[Userby] AS [Userby], 
+    [tblInventoryItem].[Lastupdate] AS [Lastupdate]
+    FROM [dbo].[tblInventoryItem] AS [tblInventoryItem]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblITServiceSparepart" EntityType="Self.tblITServiceSparepart" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblITServiceSparepart].[TicketNo] AS [TicketNo], 
+    [tblITServiceSparepart].[RowID] AS [RowID], 
+    [tblITServiceSparepart].[RequestOrderDate] AS [RequestOrderDate], 
+    [tblITServiceSparepart].[RequestOrderBy] AS [RequestOrderBy], 
+    [tblITServiceSparepart].[ApprovedBy] AS [ApprovedBy], 
+    [tblITServiceSparepart].[RequestOrderDetail] AS [RequestOrderDetail], 
+    [tblITServiceSparepart].[QTY] AS [QTY], 
+    [tblITServiceSparepart].[Price] AS [Price], 
+    [tblITServiceSparepart].[VAT] AS [VAT], 
+    [tblITServiceSparepart].[SumTotal] AS [SumTotal], 
+    [tblITServiceSparepart].[SupplierName] AS [SupplierName], 
+    [tblITServiceSparepart].[QTYVaranty] AS [QTYVaranty], 
+    [tblITServiceSparepart].[UnitVaranty] AS [UnitVaranty], 
+    [tblITServiceSparepart].[FromDate] AS [FromDate], 
+    [tblITServiceSparepart].[ToDate] AS [ToDate], 
+    [tblITServiceSparepart].[CreateBy] AS [CreateBy], 
+    [tblITServiceSparepart].[CreateDate] AS [CreateDate], 
+    [tblITServiceSparepart].[UpdateBy] AS [UpdateBy], 
+    [tblITServiceSparepart].[UpdateDate] AS [UpdateDate]
+    FROM [dbo].[tblITServiceSparepart] AS [tblITServiceSparepart]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblITServiceTicket" EntityType="Self.tblITServiceTicket" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblITServiceTicket].[TicketNo] AS [TicketNo], 
+    [tblITServiceTicket].[TickDate] AS [TickDate], 
+    [tblITServiceTicket].[BranchRequest] AS [BranchRequest], 
+    [tblITServiceTicket].[RequestFrom] AS [RequestFrom], 
+    [tblITServiceTicket].[RequestBy] AS [RequestBy], 
+    [tblITServiceTicket].[IPAddress] AS [IPAddress], 
+    [tblITServiceTicket].[RemoteType] AS [RemoteType], 
+    [tblITServiceTicket].[AssigeJobTo] AS [AssigeJobTo], 
+    [tblITServiceTicket].[CloseJOBDate] AS [CloseJOBDate], 
+    [tblITServiceTicket].[JOBStatus] AS [JOBStatus], 
+    [tblITServiceTicket].[ComputerName] AS [ComputerName], 
+    [tblITServiceTicket].[JobUserName] AS [JobUserName], 
+    [tblITServiceTicket].[JobPassword] AS [JobPassword], 
+    [tblITServiceTicket].[RequestDetail] AS [RequestDetail], 
+    [tblITServiceTicket].[TotalCostService] AS [TotalCostService], 
+    [tblITServiceTicket].[BackRepairComplete] AS [BackRepairComplete], 
+    [tblITServiceTicket].[Evaluation1] AS [Evaluation1], 
+    [tblITServiceTicket].[Evaluation2] AS [Evaluation2], 
+    [tblITServiceTicket].[Evaluation3] AS [Evaluation3], 
+    [tblITServiceTicket].[Evaluation4] AS [Evaluation4], 
+    [tblITServiceTicket].[Evaluation5] AS [Evaluation5], 
+    [tblITServiceTicket].[Evaluation6] AS [Evaluation6], 
+    [tblITServiceTicket].[EvaluationBy] AS [EvaluationBy], 
+    [tblITServiceTicket].[EvaluationDate] AS [EvaluationDate], 
+    [tblITServiceTicket].[EvaluationRemark] AS [EvaluationRemark], 
+    [tblITServiceTicket].[StatusEvaluation] AS [StatusEvaluation], 
+    [tblITServiceTicket].[TicketType] AS [TicketType], 
+    [tblITServiceTicket].[OpenDate] AS [OpenDate], 
+    [tblITServiceTicket].[EstimateDate] AS [EstimateDate], 
+    [tblITServiceTicket].[DateDiffEstimate] AS [DateDiffEstimate], 
+    [tblITServiceTicket].[CloseDate] AS [CloseDate], 
+    [tblITServiceTicket].[DateDiff] AS [DateDiff], 
+    [tblITServiceTicket].[DepartmentRequest] AS [DepartmentRequest], 
+    [tblITServiceTicket].[RepairNo] AS [RepairNo], 
+    [tblITServiceTicket].[CreateBy] AS [CreateBy], 
+    [tblITServiceTicket].[CreateDate] AS [CreateDate], 
+    [tblITServiceTicket].[UpdateBy] AS [UpdateBy], 
+    [tblITServiceTicket].[UpdateDate] AS [UpdateDate]
+    FROM [dbo].[tblITServiceTicket] AS [tblITServiceTicket]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblITServiceTicketDetail" EntityType="Self.tblITServiceTicketDetail" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblITServiceTicketDetail].[TicketNo] AS [TicketNo], 
+    [tblITServiceTicketDetail].[RowID] AS [RowID], 
+    [tblITServiceTicketDetail].[AnalyDetail] AS [AnalyDetail], 
+    [tblITServiceTicketDetail].[RepairDetail] AS [RepairDetail], 
+    [tblITServiceTicketDetail].[CreateBy] AS [CreateBy], 
+    [tblITServiceTicketDetail].[CreateDate] AS [CreateDate], 
+    [tblITServiceTicketDetail].[UpdateBy] AS [UpdateBy], 
+    [tblITServiceTicketDetail].[UpdateDate] AS [UpdateDate]
+    FROM [dbo].[tblITServiceTicketDetail] AS [tblITServiceTicketDetail]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblMasterCode" EntityType="Self.tblMasterCode" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblMasterCode].[Type] AS [Type], 
+    [tblMasterCode].[Code] AS [Code], 
+    [tblMasterCode].[Description] AS [Description], 
+    [tblMasterCode].[Note] AS [Note], 
+    [tblMasterCode].[FilterInd] AS [FilterInd], 
+    [tblMasterCode].[TypeCode] AS [TypeCode], 
+    [tblMasterCode].[LisenceSum] AS [LisenceSum], 
+    [tblMasterCode].[CreateBy] AS [CreateBy], 
+    [tblMasterCode].[CreateDate] AS [CreateDate], 
+    [tblMasterCode].[UpdateBy] AS [UpdateBy], 
+    [tblMasterCode].[UpdateDate] AS [UpdateDate]
+    FROM [dbo].[tblMasterCode] AS [tblMasterCode]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblMenu" EntityType="Self.tblMenu" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblMenu].[Program] AS [Program], 
+    [tblMenu].[Description] AS [Description], 
+    [tblMenu].[UserBy] AS [UserBy], 
+    [tblMenu].[LastUpdate] AS [LastUpdate]
+    FROM [dbo].[tblMenu] AS [tblMenu]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblOutSiteService" EntityType="Self.tblOutSiteService" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblOutSiteService].[ServiceTicketNo] AS [ServiceTicketNo], 
+    [tblOutSiteService].[ServiceDate] AS [ServiceDate], 
+    [tblOutSiteService].[OwnerName] AS [OwnerName], 
+    [tblOutSiteService].[ITName] AS [ITName], 
+    [tblOutSiteService].[PlaceOfService] AS [PlaceOfService], 
+    [tblOutSiteService].[CreateBy] AS [CreateBy], 
+    [tblOutSiteService].[CreateDate] AS [CreateDate], 
+    [tblOutSiteService].[ModifyBy] AS [ModifyBy], 
+    [tblOutSiteService].[ModifyDate] AS [ModifyDate]
+    FROM [dbo].[tblOutSiteService] AS [tblOutSiteService]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblOutSiteServiceDetail" EntityType="Self.tblOutSiteServiceDetail" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblOutSiteServiceDetail].[ServiceTicketNo] AS [ServiceTicketNo], 
+    [tblOutSiteServiceDetail].[ItemNo] AS [ItemNo], 
+    [tblOutSiteServiceDetail].[Description1] AS [Description1], 
+    [tblOutSiteServiceDetail].[Description2] AS [Description2], 
+    [tblOutSiteServiceDetail].[Description3] AS [Description3], 
+    [tblOutSiteServiceDetail].[Remarks] AS [Remarks], 
+    [tblOutSiteServiceDetail].[CreateBy] AS [CreateBy], 
+    [tblOutSiteServiceDetail].[CreateDate] AS [CreateDate], 
+    [tblOutSiteServiceDetail].[ModifyBy] AS [ModifyBy], 
+    [tblOutSiteServiceDetail].[ModifyDate] AS [ModifyDate]
+    FROM [dbo].[tblOutSiteServiceDetail] AS [tblOutSiteServiceDetail]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblOutSourceService" EntityType="Self.tblOutSourceService" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblOutSourceService].[TicketNo] AS [TicketNo], 
+    [tblOutSourceService].[ServiceNo] AS [ServiceNo], 
+    [tblOutSourceService].[ServiceDate] AS [ServiceDate], 
+    [tblOutSourceService].[SupplierCode] AS [SupplierCode], 
+    [tblOutSourceService].[SupplierName] AS [SupplierName], 
+    [tblOutSourceService].[ReceivedDate] AS [ReceivedDate], 
+    [tblOutSourceService].[ReceivedBy] AS [ReceivedBy], 
+    [tblOutSourceService].[Description1] AS [Description1], 
+    [tblOutSourceService].[Description2] AS [Description2], 
+    [tblOutSourceService].[EstimateDate] AS [EstimateDate], 
+    [tblOutSourceService].[ActualDate] AS [ActualDate], 
+    [tblOutSourceService].[QtyOfWaranty] AS [QtyOfWaranty], 
+    [tblOutSourceService].[UnitWaranty] AS [UnitWaranty], 
+    [tblOutSourceService].[StartWaranty] AS [StartWaranty], 
+    [tblOutSourceService].[EndWaranty] AS [EndWaranty], 
+    [tblOutSourceService].[EstimatePrice] AS [EstimatePrice], 
+    [tblOutSourceService].[ActualPrice] AS [ActualPrice], 
+    [tblOutSourceService].[CreateBy] AS [CreateBy], 
+    [tblOutSourceService].[CreateDate] AS [CreateDate], 
+    [tblOutSourceService].[ModifyBy] AS [ModifyBy], 
+    [tblOutSourceService].[ModifyDate] AS [ModifyDate]
+    FROM [dbo].[tblOutSourceService] AS [tblOutSourceService]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblOutSourceServiceDetail" EntityType="Self.tblOutSourceServiceDetail" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblOutSourceServiceDetail].[TicketNo] AS [TicketNo], 
+    [tblOutSourceServiceDetail].[ServiceNo] AS [ServiceNo], 
+    [tblOutSourceServiceDetail].[ItemNo] AS [ItemNo], 
+    [tblOutSourceServiceDetail].[Description] AS [Description], 
+    [tblOutSourceServiceDetail].[QTY] AS [QTY], 
+    [tblOutSourceServiceDetail].[Price] AS [Price], 
+    [tblOutSourceServiceDetail].[VAT] AS [VAT], 
+    [tblOutSourceServiceDetail].[Amount] AS [Amount], 
+    [tblOutSourceServiceDetail].[Remarks] AS [Remarks], 
+    [tblOutSourceServiceDetail].[CreateBy] AS [CreateBy], 
+    [tblOutSourceServiceDetail].[CreateDate] AS [CreateDate], 
+    [tblOutSourceServiceDetail].[ModifyBy] AS [ModifyBy], 
+    [tblOutSourceServiceDetail].[ModifyDate] AS [ModifyDate]
+    FROM [dbo].[tblOutSourceServiceDetail] AS [tblOutSourceServiceDetail]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblParty" EntityType="Self.tblParty" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblParty].[PartyCode] AS [PartyCode], 
+    [tblParty].[PartyFullName] AS [PartyFullName], 
+    [tblParty].[PartyLocalCode] AS [PartyLocalCode], 
+    [tblParty].[PartyLocalName] AS [PartyLocalName], 
+    [tblParty].[PartyLocation] AS [PartyLocation], 
+    [tblParty].[PartyCountry] AS [PartyCountry], 
+    [tblParty].[RegistrationNo] AS [RegistrationNo], 
+    [tblParty].[PartyTypeCode] AS [PartyTypeCode], 
+    [tblParty].[PartyTypeName] AS [PartyTypeName], 
+    [tblParty].[CommissionToSales] AS [CommissionToSales], 
+    [tblParty].[IATACode] AS [IATACode], 
+    [tblParty].[Remarks] AS [Remarks], 
+    [tblParty].[PartyStatus] AS [PartyStatus], 
+    [tblParty].[MessageHubID] AS [MessageHubID], 
+    [tblParty].[OtherSystemPartyID] AS [OtherSystemPartyID], 
+    [tblParty].[FormID] AS [FormID], 
+    [tblParty].[Shipper] AS [Shipper], 
+    [tblParty].[Consignee] AS [Consignee], 
+    [tblParty].[Branch_Agent] AS [Branch_Agent], 
+    [tblParty].[Co_Loader] AS [Co_Loader], 
+    [tblParty].[Trucking] AS [Trucking], 
+    [tblParty].[ShippingLine] AS [ShippingLine], 
+    [tblParty].[Vendor] AS [Vendor], 
+    [tblParty].[ContainerYard] AS [ContainerYard], 
+    [tblParty].[Warehouse] AS [Warehouse], 
+    [tblParty].[Bank] AS [Bank], 
+    [tblParty].[Factory] AS [Factory], 
+    [tblParty].[Customer] AS [Customer], 
+    [tblParty].[Broker] AS [Broker], 
+    [tblParty].[AirLine] AS [AirLine], 
+    [tblParty].[EndCustomer] AS [EndCustomer], 
+    [tblParty].[CreateBy] AS [CreateBy], 
+    [tblParty].[CreateDate] AS [CreateDate], 
+    [tblParty].[UpdateBy] AS [UpdateBy], 
+    [tblParty].[UpdateDate] AS [UpdateDate], 
+    [tblParty].[rowguid] AS [rowguid]
+    FROM [dbo].[tblParty] AS [tblParty]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblPartyAddress" EntityType="Self.tblPartyAddress" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblPartyAddress].[PartyAddressCode] AS [PartyAddressCode], 
+    [tblPartyAddress].[PartyCode] AS [PartyCode], 
+    [tblPartyAddress].[AddressType] AS [AddressType], 
+    [tblPartyAddress].[Address1] AS [Address1], 
+    [tblPartyAddress].[Address2] AS [Address2], 
+    [tblPartyAddress].[Address3] AS [Address3], 
+    [tblPartyAddress].[Address4] AS [Address4], 
+    [tblPartyAddress].[ZipCode] AS [ZipCode], 
+    [tblPartyAddress].[AreaCode] AS [AreaCode], 
+    [tblPartyAddress].[Attn] AS [Attn], 
+    [tblPartyAddress].[Tel] AS [Tel], 
+    [tblPartyAddress].[Fax] AS [Fax], 
+    [tblPartyAddress].[Web] AS [Web], 
+    [tblPartyAddress].[email] AS [email], 
+    [tblPartyAddress].[CreateBy] AS [CreateBy], 
+    [tblPartyAddress].[CreateDate] AS [CreateDate], 
+    [tblPartyAddress].[UpdateBy] AS [UpdateBy], 
+    [tblPartyAddress].[UpdateDate] AS [UpdateDate], 
+    [tblPartyAddress].[rowguid] AS [rowguid]
+    FROM [dbo].[tblPartyAddress] AS [tblPartyAddress]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblPurchaseRequistionDtl" EntityType="Self.tblPurchaseRequistionDtl" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblPurchaseRequistionDtl].[PRPHNO] AS [PRPHNO], 
+    [tblPurchaseRequistionDtl].[Itemcode] AS [Itemcode], 
+    [tblPurchaseRequistionDtl].[Qty] AS [Qty], 
+    [tblPurchaseRequistionDtl].[QtyUnit] AS [QtyUnit], 
+    [tblPurchaseRequistionDtl].[Userby] AS [Userby], 
+    [tblPurchaseRequistionDtl].[LastUpdate] AS [LastUpdate], 
+    [tblPurchaseRequistionDtl].[Detail] AS [Detail], 
+    [tblPurchaseRequistionDtl].[Price] AS [Price]
+    FROM [dbo].[tblPurchaseRequistionDtl] AS [tblPurchaseRequistionDtl]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblPurchaseRequistionHdr" EntityType="Self.tblPurchaseRequistionHdr" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblPurchaseRequistionHdr].[PRPHNo] AS [PRPHNo], 
+    [tblPurchaseRequistionHdr].[IsPR] AS [IsPR], 
+    [tblPurchaseRequistionHdr].[ApproveDate] AS [ApproveDate], 
+    [tblPurchaseRequistionHdr].[DateBuy] AS [DateBuy], 
+    [tblPurchaseRequistionHdr].[DateRequire] AS [DateRequire], 
+    [tblPurchaseRequistionHdr].[Department] AS [Department], 
+    [tblPurchaseRequistionHdr].[Party] AS [Party], 
+    [tblPurchaseRequistionHdr].[Branch] AS [Branch], 
+    [tblPurchaseRequistionHdr].[UserApp1] AS [UserApp1], 
+    [tblPurchaseRequistionHdr].[UserApp2] AS [UserApp2], 
+    [tblPurchaseRequistionHdr].[status] AS [status], 
+    [tblPurchaseRequistionHdr].[Createby] AS [Createby], 
+    [tblPurchaseRequistionHdr].[Createdate] AS [Createdate], 
+    [tblPurchaseRequistionHdr].[Userby] AS [Userby], 
+    [tblPurchaseRequistionHdr].[Lastupdate] AS [Lastupdate], 
+    [tblPurchaseRequistionHdr].[StatusMail] AS [StatusMail], 
+    [tblPurchaseRequistionHdr].[ApproveBy] AS [ApproveBy], 
+    [tblPurchaseRequistionHdr].[StatusCancel] AS [StatusCancel], 
+    [tblPurchaseRequistionHdr].[UserNameApp1] AS [UserNameApp1], 
+    [tblPurchaseRequistionHdr].[UserNameApp2] AS [UserNameApp2], 
+    [tblPurchaseRequistionHdr].[UserApp3] AS [UserApp3]
+    FROM [dbo].[tblPurchaseRequistionHdr] AS [tblPurchaseRequistionHdr]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblRecordProduct" EntityType="Self.tblRecordProduct" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblRecordProduct].[SNNo] AS [SNNo], 
+    [tblRecordProduct].[Ishw] AS [Ishw], 
+    [tblRecordProduct].[IsStock] AS [IsStock], 
+    [tblRecordProduct].[ItemCodeNO] AS [ItemCodeNO], 
+    [tblRecordProduct].[Type] AS [Type], 
+    [tblRecordProduct].[Location] AS [Location], 
+    [tblRecordProduct].[Detail] AS [Detail], 
+    [tblRecordProduct].[StartGuarantee] AS [StartGuarantee], 
+    [tblRecordProduct].[EndGuarantee] AS [EndGuarantee], 
+    [tblRecordProduct].[Remark] AS [Remark], 
+    [tblRecordProduct].[CreatBy] AS [CreatBy], 
+    [tblRecordProduct].[CreateDate] AS [CreateDate], 
+    [tblRecordProduct].[UpdateBy] AS [UpdateBy], 
+    [tblRecordProduct].[UpdateDate] AS [UpdateDate]
+    FROM [dbo].[tblRecordProduct] AS [tblRecordProduct]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblRecordProductDtl" EntityType="Self.tblRecordProductDtl" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblRecordProductDtl].[SNno] AS [SNno], 
+    [tblRecordProductDtl].[RepairNo] AS [RepairNo], 
+    [tblRecordProductDtl].[ServiceName] AS [ServiceName], 
+    [tblRecordProductDtl].[RepairDate] AS [RepairDate], 
+    [tblRecordProductDtl].[StatusRepair] AS [StatusRepair]
+    FROM [dbo].[tblRecordProductDtl] AS [tblRecordProductDtl]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblRentDevice" EntityType="Self.tblRentDevice" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblRentDevice].[RentNo] AS [RentNo], 
+    [tblRentDevice].[RentDate] AS [RentDate], 
+    [tblRentDevice].[RentOwner] AS [RentOwner], 
+    [tblRentDevice].[DeptOwner] AS [DeptOwner], 
+    [tblRentDevice].[IssuedBy] AS [IssuedBy], 
+    [tblRentDevice].[IssuedDate] AS [IssuedDate], 
+    [tblRentDevice].[ReceivedBy] AS [ReceivedBy], 
+    [tblRentDevice].[ReceivedDate] AS [ReceivedDate], 
+    [tblRentDevice].[ObjectiveofRent] AS [ObjectiveofRent], 
+    [tblRentDevice].[PlaceOfUsed] AS [PlaceOfUsed], 
+    [tblRentDevice].[StatusFinish] AS [StatusFinish], 
+    [tblRentDevice].[Remarks] AS [Remarks], 
+    [tblRentDevice].[StatusOfRent] AS [StatusOfRent], 
+    [tblRentDevice].[CreatBy] AS [CreatBy], 
+    [tblRentDevice].[CreateDate] AS [CreateDate], 
+    [tblRentDevice].[UpdateBy] AS [UpdateBy], 
+    [tblRentDevice].[UpdateDate] AS [UpdateDate]
+    FROM [dbo].[tblRentDevice] AS [tblRentDevice]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblRentDeviceDetail" EntityType="Self.tblRentDeviceDetail" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblRentDeviceDetail].[RentNo] AS [RentNo], 
+    [tblRentDeviceDetail].[ItemNo] AS [ItemNo], 
+    [tblRentDeviceDetail].[TypeDevice] AS [TypeDevice], 
+    [tblRentDeviceDetail].[AccessCode] AS [AccessCode], 
+    [tblRentDeviceDetail].[AccessName] AS [AccessName], 
+    [tblRentDeviceDetail].[Qty] AS [Qty], 
+    [tblRentDeviceDetail].[AccessoryOfDevice] AS [AccessoryOfDevice], 
+    [tblRentDeviceDetail].[Remarks] AS [Remarks], 
+    [tblRentDeviceDetail].[StatusOfRent] AS [StatusOfRent], 
+    [tblRentDeviceDetail].[CreatBy] AS [CreatBy], 
+    [tblRentDeviceDetail].[CreateDate] AS [CreateDate], 
+    [tblRentDeviceDetail].[UpdateBy] AS [UpdateBy], 
+    [tblRentDeviceDetail].[UpdateDate] AS [UpdateDate], 
+    [tblRentDeviceDetail].[FirstRent] AS [FirstRent]
+    FROM [dbo].[tblRentDeviceDetail] AS [tblRentDeviceDetail]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblRepair" EntityType="Self.tblRepair" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblRepair].[RepairNo] AS [RepairNo], 
+    [tblRepair].[Type] AS [Type], 
+    [tblRepair].[Branch] AS [Branch], 
+    [tblRepair].[Depart] AS [Depart], 
+    [tblRepair].[Asset] AS [Asset], 
+    [tblRepair].[Qty] AS [Qty], 
+    [tblRepair].[PlaceUse] AS [PlaceUse], 
+    [tblRepair].[Ruined] AS [Ruined], 
+    [tblRepair].[Name] AS [Name], 
+    [tblRepair].[Approve] AS [Approve], 
+    [tblRepair].[ApproveName] AS [ApproveName], 
+    [tblRepair].[CreateDate] AS [CreateDate], 
+    [tblRepair].[CreateBy] AS [CreateBy]
+    FROM [dbo].[tblRepair] AS [tblRepair]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblRepairDetail" EntityType="Self.tblRepairDetail" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblRepairDetail].[RepairNo] AS [RepairNo], 
+    [tblRepairDetail].[DateCompany] AS [DateCompany], 
+    [tblRepairDetail].[DateRepair] AS [DateRepair], 
+    [tblRepairDetail].[TimeRepair] AS [TimeRepair], 
+    [tblRepairDetail].[CompanyRepair] AS [CompanyRepair], 
+    [tblRepairDetail].[CompanyPhone] AS [CompanyPhone], 
+    [tblRepairDetail].[RepairMan] AS [RepairMan], 
+    [tblRepairDetail].[RepairManPhone] AS [RepairManPhone], 
+    [tblRepairDetail].[TypePrice] AS [TypePrice], 
+    [tblRepairDetail].[Warranty] AS [Warranty], 
+    [tblRepairDetail].[PriceAll] AS [PriceAll], 
+    [tblRepairDetail].[AppPrice] AS [AppPrice], 
+    [tblRepairDetail].[DateRepairMan] AS [DateRepairMan], 
+    [tblRepairDetail].[TimeRepairMan] AS [TimeRepairMan], 
+    [tblRepairDetail].[Normal] AS [Normal], 
+    [tblRepairDetail].[AbNormal] AS [AbNormal], 
+    [tblRepairDetail].[Note] AS [Note], 
+    [tblRepairDetail].[ManCheck] AS [ManCheck], 
+    [tblRepairDetail].[DateCheck] AS [DateCheck], 
+    [tblRepairDetail].[UserBy] AS [UserBy], 
+    [tblRepairDetail].[UserDate] AS [UserDate]
+    FROM [dbo].[tblRepairDetail] AS [tblRepairDetail]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblUser" EntityType="Self.tblUser" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblUser].[UserName] AS [UserName], 
+    [tblUser].[Name] AS [Name], 
+    [tblUser].[Dept] AS [Dept], 
+    [tblUser].[Branch] AS [Branch], 
+    [tblUser].[Party] AS [Party], 
+    [tblUser].[Password] AS [Password], 
+    [tblUser].[Mail] AS [Mail]
+    FROM [dbo].[tblUser] AS [tblUser]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblUserGroup" EntityType="Self.tblUserGroup" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblUserGroup].[UserGroupCode] AS [UserGroupCode], 
+    [tblUserGroup].[UserGroupName] AS [UserGroupName], 
+    [tblUserGroup].[rowguid] AS [rowguid]
+    FROM [dbo].[tblUserGroup] AS [tblUserGroup]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblUserMenu" EntityType="Self.tblUserMenu" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblUserMenu].[UserName] AS [UserName], 
+    [tblUserMenu].[Program] AS [Program], 
+    [tblUserMenu].[status] AS [status], 
+    [tblUserMenu].[UserBy] AS [UserBy], 
+    [tblUserMenu].[LastUpdate] AS [LastUpdate]
+    FROM [dbo].[tblUserMenu] AS [tblUserMenu]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

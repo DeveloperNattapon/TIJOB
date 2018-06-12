@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ITmanagementModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tblAccessList">
+          <Key>
+            <PropertyRef Name="AccessNo" />
+          </Key>
+          <Property Name="AccessNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="AccessName" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="RecordDate" Type="datetime" />
+          <Property Name="TypeofAccess" Type="varchar" MaxLength="50" />
+          <Property Name="OrderNo" Type="varchar" MaxLength="50" />
+          <Property Name="OrderDate" Type="datetime" />
+          <Property Name="ValueOfAccess" Type="float" />
+          <Property Name="WarrantyValue" Type="varchar" MaxLength="50" />
+          <Property Name="WarrantyUnit" Type="varchar" MaxLength="50" />
+          <Property Name="StartWarranty" Type="datetime" />
+          <Property Name="EndWarranty" Type="datetime" />
+          <Property Name="PlaceOfWarranty" Type="varchar" MaxLength="100" />
+          <Property Name="SupplierCode" Type="varchar" MaxLength="50" />
+          <Property Name="SupplierName" Type="varchar" MaxLength="200" />
+          <Property Name="Remark" Type="varchar" MaxLength="250" />
+          <Property Name="CreateDate" Type="datetime" />
+          <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+          <Property Name="ModifyDate" Type="datetime" />
+          <Property Name="ModifyBy" Type="varchar" MaxLength="50" />
+          <Property Name="StatusOnStock" Type="char" MaxLength="5" />
+          <Property Name="SN" Type="varchar" MaxLength="50" />
+          <Property Name="Branch" Type="varchar" MaxLength="50" />
+          <Property Name="Department" Type="varchar" MaxLength="50" />
+          <Property Name="Owner" Type="varchar" MaxLength="50" />
+          <Property Name="AccessAccount" Type="varchar" MaxLength="50" />
+          <Property Name="ReceiveDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblAccessListDetail">
+          <Key>
+            <PropertyRef Name="AccessNo" />
+            <PropertyRef Name="ItemNo" />
+          </Key>
+          <Property Name="AccessNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ItemNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="TypeOfDevice" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="NameOfDevice" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Price" Type="float" />
+          <Property Name="OrderNo" Type="varchar" MaxLength="50" />
+          <Property Name="WarrantyValue" Type="float" />
+          <Property Name="WarrantyUnit" Type="varchar" MaxLength="50" />
+          <Property Name="StartWarranty" Type="datetime" />
+          <Property Name="EndWarranty" Type="datetime" />
+          <Property Name="PlaceOfWarranty" Type="varchar" MaxLength="200" />
+          <Property Name="SupplierCode" Type="varchar" MaxLength="50" />
+          <Property Name="SupplierName" Type="varchar" MaxLength="200" />
+          <Property Name="CreateDate" Type="datetime" />
+          <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+          <Property Name="ModifyDate" Type="datetime" />
+          <Property Name="ModifyName" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tblDepartment">
+          <Key>
+            <PropertyRef Name="Branch" />
+            <PropertyRef Name="Party" />
+            <PropertyRef Name="Department" />
+          </Key>
+          <Property Name="Branch" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Party" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Department" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Manager" Type="varchar" MaxLength="50" />
+          <Property Name="A_Manager" Type="varchar" MaxLength="50" />
+          <Property Name="Status" Type="int" />
+          <Property Name="Userby" Type="varchar" MaxLength="50" />
+          <Property Name="Lastupdate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblMasterCode">
+          <Key>
+            <PropertyRef Name="Type" />
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="Type" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Code" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="200" />
+          <Property Name="Note" Type="varchar" MaxLength="200" />
+          <Property Name="FilterInd" Type="varchar" MaxLength="50" />
+          <Property Name="TypeCode" Type="varchar" MaxLength="50" />
+          <Property Name="LisenceSum" Type="int" />
+          <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+          <Property Name="CreateDate" Type="datetime" />
+          <Property Name="UpdateBy" Type="varchar" MaxLength="50" />
+          <Property Name="UpdateDate" Type="datetime" />
+        </EntityType>
+        <EntityContainer Name="ITmanagementModelStoreContainer">
+          <EntitySet Name="tblAccessList" EntityType="Self.tblAccessList" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblAccessListDetail" EntityType="Self.tblAccessListDetail" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblDepartment" EntityType="Self.tblDepartment" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblMasterCode" EntityType="Self.tblMasterCode" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ITmanagementModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tblAccessList">
+          <Key>
+            <PropertyRef Name="AccessNo" />
+          </Key>
+          <Property Name="AccessNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="AccessName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="RecordDate" Type="DateTime" Precision="3" />
+          <Property Name="TypeofAccess" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="OrderNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="OrderDate" Type="DateTime" Precision="3" />
+          <Property Name="ValueOfAccess" Type="Double" />
+          <Property Name="WarrantyValue" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="WarrantyUnit" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="StartWarranty" Type="DateTime" Precision="3" />
+          <Property Name="EndWarranty" Type="DateTime" Precision="3" />
+          <Property Name="PlaceOfWarranty" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="SupplierCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="SupplierName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Remark" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="CreateDate" Type="DateTime" Precision="3" />
+          <Property Name="CreateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ModifyDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifyBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="StatusOnStock" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+          <Property Name="SN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Branch" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Department" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Owner" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="AccessAccount" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ReceiveDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="tblAccessListDetail">
+          <Key>
+            <PropertyRef Name="AccessNo" />
+            <PropertyRef Name="ItemNo" />
+          </Key>
+          <Property Name="AccessNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ItemNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TypeOfDevice" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="NameOfDevice" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Price" Type="Double" />
+          <Property Name="OrderNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="WarrantyValue" Type="Double" />
+          <Property Name="WarrantyUnit" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="StartWarranty" Type="DateTime" Precision="3" />
+          <Property Name="EndWarranty" Type="DateTime" Precision="3" />
+          <Property Name="PlaceOfWarranty" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="SupplierCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="SupplierName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="CreateDate" Type="DateTime" Precision="3" />
+          <Property Name="CreateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ModifyDate" Type="DateTime" Precision="3" />
+          <Property Name="ModifyName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="ITmanagementEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tblAccessLists" EntityType="Self.tblAccessList" />
+          <EntitySet Name="tblAccessListDetails" EntityType="Self.tblAccessListDetail" />
+          <EntitySet Name="tblMasterCodes" EntityType="ITmanagementModel.tblMasterCode" />
+          <EntitySet Name="tblDepartments" EntityType="ITmanagementModel.tblDepartment" />
+        </EntityContainer>
+        <EntityType Name="tblMasterCode">
+          <Key>
+            <PropertyRef Name="Type" />
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="Type" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Code" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Note" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="FilterInd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TypeCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LisenceSum" Type="Int32" />
+          <Property Name="CreateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CreateDate" Type="DateTime" Precision="3" />
+          <Property Name="UpdateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="tblDepartment">
+          <Key>
+            <PropertyRef Name="Branch" />
+            <PropertyRef Name="Party" />
+            <PropertyRef Name="Department" />
+          </Key>
+          <Property Name="Branch" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Party" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Department" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Manager" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="A_Manager" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="Int32" />
+          <Property Name="Userby" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Lastupdate" Type="DateTime" Precision="3" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ITmanagementModelStoreContainer" CdmEntityContainer="ITmanagementEntities">
+          <EntitySetMapping Name="tblAccessLists">
+            <EntityTypeMapping TypeName="ITmanagementModel.tblAccessList">
+              <MappingFragment StoreEntitySet="tblAccessList">
+                <ScalarProperty Name="AccessNo" ColumnName="AccessNo" />
+                <ScalarProperty Name="AccessName" ColumnName="AccessName" />
+                <ScalarProperty Name="RecordDate" ColumnName="RecordDate" />
+                <ScalarProperty Name="TypeofAccess" ColumnName="TypeofAccess" />
+                <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+                <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+                <ScalarProperty Name="ValueOfAccess" ColumnName="ValueOfAccess" />
+                <ScalarProperty Name="WarrantyValue" ColumnName="WarrantyValue" />
+                <ScalarProperty Name="WarrantyUnit" ColumnName="WarrantyUnit" />
+                <ScalarProperty Name="StartWarranty" ColumnName="StartWarranty" />
+                <ScalarProperty Name="EndWarranty" ColumnName="EndWarranty" />
+                <ScalarProperty Name="PlaceOfWarranty" ColumnName="PlaceOfWarranty" />
+                <ScalarProperty Name="SupplierCode" ColumnName="SupplierCode" />
+                <ScalarProperty Name="SupplierName" ColumnName="SupplierName" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+                <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+                <ScalarProperty Name="ModifyBy" ColumnName="ModifyBy" />
+                <ScalarProperty Name="StatusOnStock" ColumnName="StatusOnStock" />
+                <ScalarProperty Name="SN" ColumnName="SN" />
+                <ScalarProperty Name="Branch" ColumnName="Branch" />
+                <ScalarProperty Name="Department" ColumnName="Department" />
+                <ScalarProperty Name="Owner" ColumnName="Owner" />
+                <ScalarProperty Name="AccessAccount" ColumnName="AccessAccount" />
+                <ScalarProperty Name="ReceiveDate" ColumnName="ReceiveDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblAccessListDetails">
+            <EntityTypeMapping TypeName="ITmanagementModel.tblAccessListDetail">
+              <MappingFragment StoreEntitySet="tblAccessListDetail">
+                <ScalarProperty Name="AccessNo" ColumnName="AccessNo" />
+                <ScalarProperty Name="ItemNo" ColumnName="ItemNo" />
+                <ScalarProperty Name="TypeOfDevice" ColumnName="TypeOfDevice" />
+                <ScalarProperty Name="NameOfDevice" ColumnName="NameOfDevice" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
+                <ScalarProperty Name="WarrantyValue" ColumnName="WarrantyValue" />
+                <ScalarProperty Name="WarrantyUnit" ColumnName="WarrantyUnit" />
+                <ScalarProperty Name="StartWarranty" ColumnName="StartWarranty" />
+                <ScalarProperty Name="EndWarranty" ColumnName="EndWarranty" />
+                <ScalarProperty Name="PlaceOfWarranty" ColumnName="PlaceOfWarranty" />
+                <ScalarProperty Name="SupplierCode" ColumnName="SupplierCode" />
+                <ScalarProperty Name="SupplierName" ColumnName="SupplierName" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+                <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+                <ScalarProperty Name="ModifyName" ColumnName="ModifyName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblMasterCodes">
+            <EntityTypeMapping TypeName="ITmanagementModel.tblMasterCode">
+              <MappingFragment StoreEntitySet="tblMasterCode">
+                <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+                <ScalarProperty Name="UpdateBy" ColumnName="UpdateBy" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+                <ScalarProperty Name="LisenceSum" ColumnName="LisenceSum" />
+                <ScalarProperty Name="TypeCode" ColumnName="TypeCode" />
+                <ScalarProperty Name="FilterInd" ColumnName="FilterInd" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblDepartments">
+            <EntityTypeMapping TypeName="ITmanagementModel.tblDepartment">
+              <MappingFragment StoreEntitySet="tblDepartment">
+                <ScalarProperty Name="Lastupdate" ColumnName="Lastupdate" />
+                <ScalarProperty Name="Userby" ColumnName="Userby" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="A_Manager" ColumnName="A_Manager" />
+                <ScalarProperty Name="Manager" ColumnName="Manager" />
+                <ScalarProperty Name="Department" ColumnName="Department" />
+                <ScalarProperty Name="Party" ColumnName="Party" />
+                <ScalarProperty Name="Branch" ColumnName="Branch" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ITmanagementModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblAccessList">
+    <Key>
+      <PropertyRef Name="AccessNo" />
+    </Key>
+    <Property Name="AccessNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AccessName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RecordDate" Type="DateTime" Precision="3" />
+    <Property Name="TypeofAccess" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="OrderNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="OrderDate" Type="DateTime" Precision="3" />
+    <Property Name="ValueOfAccess" Type="Double" />
+    <Property Name="WarrantyValue" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="WarrantyUnit" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="StartWarranty" Type="DateTime" Precision="3" />
+    <Property Name="EndWarranty" Type="DateTime" Precision="3" />
+    <Property Name="PlaceOfWarranty" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SupplierCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SupplierName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Remark" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="CreateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ModifyDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifyBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="StatusOnStock" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Name="SN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Branch" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Department" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Owner" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AccessAccount" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ReceiveDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tblAccessListDetail">
+    <Key>
+      <PropertyRef Name="AccessNo" />
+      <PropertyRef Name="ItemNo" />
+    </Key>
+    <Property Name="AccessNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ItemNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TypeOfDevice" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NameOfDevice" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Price" Type="Double" />
+    <Property Name="OrderNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="WarrantyValue" Type="Double" />
+    <Property Name="WarrantyUnit" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="StartWarranty" Type="DateTime" Precision="3" />
+    <Property Name="EndWarranty" Type="DateTime" Precision="3" />
+    <Property Name="PlaceOfWarranty" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="SupplierCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SupplierName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="CreateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ModifyDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifyName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="ITmanagementEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblAccessLists" EntityType="Self.tblAccessList" />
+    <EntitySet Name="tblAccessListDetails" EntityType="Self.tblAccessListDetail" />
+    <EntitySet Name="tblMasterCodes" EntityType="ITmanagementModel.tblMasterCode" />
+    <EntitySet Name="tblDepartments" EntityType="ITmanagementModel.tblDepartment" />
+  </EntityContainer>
+  <EntityType Name="tblMasterCode">
+    <Key>
+      <PropertyRef Name="Type" />
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="Type" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Note" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="FilterInd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TypeCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LisenceSum" Type="Int32" />
+    <Property Name="CreateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdateBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UpdateDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="tblDepartment">
+    <Key>
+      <PropertyRef Name="Branch" />
+      <PropertyRef Name="Party" />
+      <PropertyRef Name="Department" />
+    </Key>
+    <Property Name="Branch" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Party" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Department" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Manager" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="A_Manager" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="Int32" />
+    <Property Name="Userby" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Lastupdate" Type="DateTime" Precision="3" />
+  </EntityType>
+</Schema>

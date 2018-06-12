@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ITmanagementModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblAccessList">
+    <Key>
+      <PropertyRef Name="AccessNo" />
+    </Key>
+    <Property Name="AccessNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AccessName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="RecordDate" Type="datetime" />
+    <Property Name="TypeofAccess" Type="varchar" MaxLength="50" />
+    <Property Name="OrderNo" Type="varchar" MaxLength="50" />
+    <Property Name="OrderDate" Type="datetime" />
+    <Property Name="ValueOfAccess" Type="float" />
+    <Property Name="WarrantyValue" Type="varchar" MaxLength="50" />
+    <Property Name="WarrantyUnit" Type="varchar" MaxLength="50" />
+    <Property Name="StartWarranty" Type="datetime" />
+    <Property Name="EndWarranty" Type="datetime" />
+    <Property Name="PlaceOfWarranty" Type="varchar" MaxLength="100" />
+    <Property Name="SupplierCode" Type="varchar" MaxLength="50" />
+    <Property Name="SupplierName" Type="varchar" MaxLength="200" />
+    <Property Name="Remark" Type="varchar" MaxLength="250" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="ModifyDate" Type="datetime" />
+    <Property Name="ModifyBy" Type="varchar" MaxLength="50" />
+    <Property Name="StatusOnStock" Type="char" MaxLength="5" />
+    <Property Name="SN" Type="varchar" MaxLength="50" />
+    <Property Name="Branch" Type="varchar" MaxLength="50" />
+    <Property Name="Department" Type="varchar" MaxLength="50" />
+    <Property Name="Owner" Type="varchar" MaxLength="50" />
+    <Property Name="AccessAccount" Type="varchar" MaxLength="50" />
+    <Property Name="ReceiveDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblAccessListDetail">
+    <Key>
+      <PropertyRef Name="AccessNo" />
+      <PropertyRef Name="ItemNo" />
+    </Key>
+    <Property Name="AccessNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ItemNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TypeOfDevice" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="NameOfDevice" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Price" Type="float" />
+    <Property Name="OrderNo" Type="varchar" MaxLength="50" />
+    <Property Name="WarrantyValue" Type="float" />
+    <Property Name="WarrantyUnit" Type="varchar" MaxLength="50" />
+    <Property Name="StartWarranty" Type="datetime" />
+    <Property Name="EndWarranty" Type="datetime" />
+    <Property Name="PlaceOfWarranty" Type="varchar" MaxLength="200" />
+    <Property Name="SupplierCode" Type="varchar" MaxLength="50" />
+    <Property Name="SupplierName" Type="varchar" MaxLength="200" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="ModifyDate" Type="datetime" />
+    <Property Name="ModifyName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblDepartment">
+    <Key>
+      <PropertyRef Name="Branch" />
+      <PropertyRef Name="Party" />
+      <PropertyRef Name="Department" />
+    </Key>
+    <Property Name="Branch" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Party" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Department" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Manager" Type="varchar" MaxLength="50" />
+    <Property Name="A_Manager" Type="varchar" MaxLength="50" />
+    <Property Name="Status" Type="int" />
+    <Property Name="Userby" Type="varchar" MaxLength="50" />
+    <Property Name="Lastupdate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblMasterCode">
+    <Key>
+      <PropertyRef Name="Type" />
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="Type" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="200" />
+    <Property Name="Note" Type="varchar" MaxLength="200" />
+    <Property Name="FilterInd" Type="varchar" MaxLength="50" />
+    <Property Name="TypeCode" Type="varchar" MaxLength="50" />
+    <Property Name="LisenceSum" Type="int" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="UpdateBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdateDate" Type="datetime" />
+  </EntityType>
+  <EntityContainer Name="ITmanagementModelStoreContainer">
+    <EntitySet Name="tblAccessList" EntityType="Self.tblAccessList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblAccessListDetail" EntityType="Self.tblAccessListDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblDepartment" EntityType="Self.tblDepartment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblMasterCode" EntityType="Self.tblMasterCode" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
