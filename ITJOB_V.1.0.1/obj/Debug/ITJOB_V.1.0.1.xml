@@ -6,638 +6,19 @@ ITJOB_V.1.0.1
 </name>
 </assembly>
 <members>
-<member name="F:ITJOB_V._1._0._1.addjob.txtNameth">
+<member name="P:ITJOB_V._1._0._1.My.Resources.Resources.ResourceManager">
 	<summary>
-txtNameth control.
+  Returns the cached ResourceManager instance used by this class.
 </summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.addjob.txtuserIP">
+</member><member name="P:ITJOB_V._1._0._1.My.Resources.Resources.Culture">
 	<summary>
-txtuserIP control.
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
 </summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.addjob.txtUserTel">
+</member><member name="T:ITJOB_V._1._0._1.My.Resources.Resources">
 	<summary>
-txtUserTel control.
+  A strongly-typed resource class, for looking up localized strings, etc.
 </summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.addjob.ddDivision">
-	<summary>
-ddDivision control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.addjob.ddltype">
-	<summary>
-ddltype control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.addjob.SqlDataSource1">
-	<summary>
-SqlDataSource1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.addjob.dd_Division">
-	<summary>
-dd_Division control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.addjob.txtDetail">
-	<summary>
-txtDetail control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.addjob.btnSave">
-	<summary>
-btnSave control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Manual.form1">
-	<summary>
-form1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Manual.lbltitle">
-	<summary>
-lbltitle control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Manual.TextBox1">
-	<summary>
-TextBox1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Manual.FileUpload1">
-	<summary>
-FileUpload1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Manual.btnUp">
-	<summary>
-btnUp control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Manual.btnDownload">
-	<summary>
-btnDownload control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Manual.lblText">
-	<summary>
-lblText control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Manual.FileGV">
-	<summary>
-FileGV control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Login.ScriptManager1">
-	<summary>
-ScriptManager1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Login.txtUserName">
-	<summary>
-txtUserName control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Login.txtUserPass">
-	<summary>
-txtUserPass control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Login.lblMsg">
-	<summary>
-lblMsg control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Login.Button1">
-	<summary>
-Button1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.edit_PreviewJob.form1">
-	<summary>
-form1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.edit_PreviewJob.lblDocID">
-	<summary>
-lblDocID control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.edit_PreviewJob.labbuild">
-	<summary>
-labbuild control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.edit_PreviewJob.txtRequest">
-	<summary>
-txtRequest control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.edit_PreviewJob.txtUserIP">
-	<summary>
-txtUserIP control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.edit_PreviewJob.txtUserTel">
-	<summary>
-txtUserTel control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.edit_PreviewJob.txtBranch">
-	<summary>
-txtBranch control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.edit_PreviewJob.txtCaseJob">
-	<summary>
-txtCaseJob control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.edit_PreviewJob.txtDivision">
-	<summary>
-txtDivision control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.edit_PreviewJob.txtDetail">
-	<summary>
-txtDetail control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.edit_PreviewJob.btnSave_Preview">
-	<summary>
-btnSave_Preview control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Homepage.form1">
-	<summary>
-form1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Homepage.ScriptManager1">
-	<summary>
-ScriptManager1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Homepage.txtSearchHp">
-	<summary>
-txtSearchHp control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Homepage.dtpFromDate">
-	<summary>
-dtpFromDate control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Homepage.CalendarExtender">
-	<summary>
-CalendarExtender control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Homepage.ddlcategory">
-	<summary>
-ddlcategory control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Homepage.btnSearhHp">
-	<summary>
-btnSearhHp control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Homepage.title1">
-	<summary>
-title1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Homepage.btnAdd">
-	<summary>
-btnAdd control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Homepage.UpModal">
-	<summary>
-UpModal control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Homepage.userGV">
-	<summary>
-userGV control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Homepage.title2">
-	<summary>
-title2 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Homepage.UpdatePanel1">
-	<summary>
-UpdatePanel1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Homepage.JobITGV">
-	<summary>
-JobITGV control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Homepage.UpdatePanel2">
-	<summary>
-UpdatePanel2 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Homepage.lbldocID2">
-	<summary>
-lbldocID2 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Homepage.lblRequest2">
-	<summary>
-lblRequest2 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Homepage.lblcreate2">
-	<summary>
-lblcreate2 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Homepage.lblBranch">
-	<summary>
-lblBranch control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Homepage.lblDept">
-	<summary>
-lblDept control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Homepage.Label2">
-	<summary>
-Label2 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Homepage.lblDetail">
-	<summary>
-lblDetail control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Homepage.ddlPosition">
-	<summary>
-ddlPosition control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Homepage.ddlAssign">
-	<summary>
-ddlAssign control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Homepage.SqlDataSource1">
-	<summary>
-SqlDataSource1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Homepage.txtComment">
-	<summary>
-txtComment control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.Homepage.btnSaveChange">
-	<summary>
-btnSaveChange control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.itClose_Job.form1">
-	<summary>
-form1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.itClose_Job.ScriptManager1">
-	<summary>
-ScriptManager1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.itClose_Job.txtRequest">
-	<summary>
-txtRequest control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.itClose_Job.txtUserIP">
-	<summary>
-txtUserIP control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.itClose_Job.txtUserTel">
-	<summary>
-txtUserTel control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.itClose_Job.txtBranch">
-	<summary>
-txtBranch control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.itClose_Job.dlCaseJob">
-	<summary>
-dlCaseJob control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.itClose_Job.SqlDataSource1">
-	<summary>
-SqlDataSource1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.itClose_Job.txtDivision">
-	<summary>
-txtDivision control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.itClose_Job.txtDetail">
-	<summary>
-txtDetail control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.itClose_Job.txtRecipient">
-	<summary>
-txtRecipient control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.itClose_Job.txtAssign">
-	<summary>
-txtAssign control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.itClose_Job.dtpCreatedate">
-	<summary>
-dtpCreatedate control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.itClose_Job.CalendarExtender">
-	<summary>
-CalendarExtender control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.itClose_Job.dtpClosedate">
-	<summary>
-dtpClosedate control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.itClose_Job.CalendarExtender2">
-	<summary>
-CalendarExtender2 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.itClose_Job.ddlPosition">
-	<summary>
-ddlPosition control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.itClose_Job.txtRepair">
-	<summary>
-txtRepair control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.itClose_Job.btnSave_close">
-	<summary>
-btnSave_close control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
 </member><member name="F:ITJOB_V._1._0._1.Home.head">
 	<summary>
 head control.
@@ -686,567 +67,6 @@ MyTable control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:ITJOB_V._1._0._1.logout.form1">
-	<summary>
-form1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.MyJob.form1">
-	<summary>
-form1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.MyJob.ScriptManager1">
-	<summary>
-ScriptManager1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.MyJob.btnAddClode">
-	<summary>
-btnAddClode control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.MyJob.lblaccess">
-	<summary>
-lblaccess control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.MyJob.lbltitle1">
-	<summary>
-lbltitle1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.MyJob.MyJobGV">
-	<summary>
-MyJobGV control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.MyJob.lbltitle2">
-	<summary>
-lbltitle2 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.MyJob.RepairGV">
-	<summary>
-RepairGV control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.CloseJob.ScriptManager1">
-	<summary>
-ScriptManager1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.CloseJob.btnClose">
-	<summary>
-btnClose control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.CloseJob.lblDocID">
-	<summary>
-lblDocID control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.CloseJob.lblCreatedate">
-	<summary>
-lblCreatedate control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.CloseJob.lblstatus">
-	<summary>
-lblstatus control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.CloseJob.lblupdate">
-	<summary>
-lblupdate control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.CloseJob.lblClosedate">
-	<summary>
-lblClosedate control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.CloseJob.lblRequest">
-	<summary>
-lblRequest control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.CloseJob.lblUserIP">
-	<summary>
-lblUserIP control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.CloseJob.lblUserTel">
-	<summary>
-lblUserTel control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.CloseJob.labDivision">
-	<summary>
-labDivision control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.CloseJob.lblRecipient">
-	<summary>
-lblRecipient control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.CloseJob.lblAssign">
-	<summary>
-lblAssign control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.CloseJob.lblPosition">
-	<summary>
-lblPosition control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.CloseJob.lblCaseJob">
-	<summary>
-lblCaseJob control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.CloseJob.lblDetail">
-	<summary>
-lblDetail control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.CloseJob.lblComment">
-	<summary>
-lblComment control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.CloseJob.lblpair">
-	<summary>
-lblpair control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.CloseJob.UpdatePanel2">
-	<summary>
-UpdatePanel2 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.CloseJob.lbldocID2">
-	<summary>
-lbldocID2 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.CloseJob.txtRepairDetail">
-	<summary>
-txtRepairDetail control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.CloseJob.btnSaveChange">
-	<summary>
-btnSaveChange control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.form1">
-	<summary>
-form1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.ScriptManager1">
-	<summary>
-ScriptManager1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.txtSearch">
-	<summary>
-txtSearch control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.btnSearh">
-	<summary>
-btnSearh control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.title1">
-	<summary>
-title1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.btnAddPR">
-	<summary>
-btnAddPR control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.UpdatePanel1">
-	<summary>
-UpdatePanel1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.gvShowRP">
-	<summary>
-gvShowRP control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.UpdatePanel2">
-	<summary>
-UpdatePanel2 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.txtAccessNo">
-	<summary>
-txtAccessNo control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.txtAccAccess">
-	<summary>
-txtAccAccess control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.dcbTypeofAccess">
-	<summary>
-dcbTypeofAccess control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.txtAccessName">
-	<summary>
-txtAccessName control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.dtpRecordDate">
-	<summary>
-dtpRecordDate control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.CalendarExtender1">
-	<summary>
-CalendarExtender1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.dtpOrderDate">
-	<summary>
-dtpOrderDate control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.CalendarExtender2">
-	<summary>
-CalendarExtender2 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.txtValueOfAccess">
-	<summary>
-txtValueOfAccess control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.txtWarrantyValue">
-	<summary>
-txtWarrantyValue control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.txtOrderNo">
-	<summary>
-txtOrderNo control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.txtPlaceOfWarranty">
-	<summary>
-txtPlaceOfWarranty control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.dtpStartWarranty">
-	<summary>
-dtpStartWarranty control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.CalendarExtender3">
-	<summary>
-CalendarExtender3 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.dtpEndWarranty">
-	<summary>
-dtpEndWarranty control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.CalendarExtender4">
-	<summary>
-CalendarExtender4 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.txtSupplierCode">
-	<summary>
-txtSupplierCode control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.txtSupplierName">
-	<summary>
-txtSupplierName control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.dcbBranch">
-	<summary>
-dcbBranch control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.cboDepartment">
-	<summary>
-cboDepartment control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.dtpReceive">
-	<summary>
-dtpReceive control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.CalendarExtender5">
-	<summary>
-CalendarExtender5 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.txtRemark">
-	<summary>
-txtRemark control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.txtSN">
-	<summary>
-txtSN control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.txtOwner">
-	<summary>
-txtOwner control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.dcbWarrantyUnit">
-	<summary>
-dcbWarrantyUnit control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.btnSaveChange">
-	<summary>
-btnSaveChange control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="P:ITJOB_V._1._0._1.My.MyWebExtension.Computer">
-	<summary>
- Returns information about the host computer.
- </summary>
-</member><member name="P:ITJOB_V._1._0._1.My.MyWebExtension.User">
-	<summary>
- Returns information for the current Web user.
- </summary>
-</member><member name="P:ITJOB_V._1._0._1.My.MyWebExtension.Request">
-	<summary>
- Returns Request object.
- </summary>
-</member><member name="P:ITJOB_V._1._0._1.My.MyWebExtension.Response">
-	<summary>
- Returns Response object.
- </summary>
-</member><member name="P:ITJOB_V._1._0._1.My.MyWebExtension.Log">
-	<summary>
- Returns the Asp log object.
- </summary>
-</member><member name="T:ITJOB_V._1._0._1.My.MyWebExtension">
-	<summary>
- Module used to define the properties that are available in the My Namespace for Web projects.
- </summary>
-	<remarks></remarks>
 </member><member name="F:ITJOB_V._1._0._1.Preview.btnEdit">
 	<summary>
 btnEdit control.
@@ -1370,6 +190,14 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:ITJOB_V._1._0._1.Preview.lblRepair">
 	<summary>
 lblRepair control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.logout.form1">
+	<summary>
+form1 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -1703,6 +531,310 @@ btnSave_RP control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:ITJOB_V._1._0._1.edit_PreviewJob.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.edit_PreviewJob.lblDocID">
+	<summary>
+lblDocID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.edit_PreviewJob.labbuild">
+	<summary>
+labbuild control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.edit_PreviewJob.txtRequest">
+	<summary>
+txtRequest control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.edit_PreviewJob.txtUserIP">
+	<summary>
+txtUserIP control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.edit_PreviewJob.txtUserTel">
+	<summary>
+txtUserTel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.edit_PreviewJob.txtBranch">
+	<summary>
+txtBranch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.edit_PreviewJob.txtCaseJob">
+	<summary>
+txtCaseJob control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.edit_PreviewJob.txtDivision">
+	<summary>
+txtDivision control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.edit_PreviewJob.txtDetail">
+	<summary>
+txtDetail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.edit_PreviewJob.btnSave_Preview">
+	<summary>
+btnSave_Preview control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.CloseJob.ScriptManager1">
+	<summary>
+ScriptManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.CloseJob.btnClose">
+	<summary>
+btnClose control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.CloseJob.lblDocID">
+	<summary>
+lblDocID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.CloseJob.lblCreatedate">
+	<summary>
+lblCreatedate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.CloseJob.lblstatus">
+	<summary>
+lblstatus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.CloseJob.lblupdate">
+	<summary>
+lblupdate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.CloseJob.lblClosedate">
+	<summary>
+lblClosedate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.CloseJob.lblRequest">
+	<summary>
+lblRequest control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.CloseJob.lblUserIP">
+	<summary>
+lblUserIP control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.CloseJob.lblUserTel">
+	<summary>
+lblUserTel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.CloseJob.labDivision">
+	<summary>
+labDivision control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.CloseJob.lblRecipient">
+	<summary>
+lblRecipient control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.CloseJob.lblAssign">
+	<summary>
+lblAssign control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.CloseJob.lblPosition">
+	<summary>
+lblPosition control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.CloseJob.lblCaseJob">
+	<summary>
+lblCaseJob control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.CloseJob.lblDetail">
+	<summary>
+lblDetail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.CloseJob.lblComment">
+	<summary>
+lblComment control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.CloseJob.lblpair">
+	<summary>
+lblpair control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.CloseJob.UpdatePanel2">
+	<summary>
+UpdatePanel2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.CloseJob.lbldocID2">
+	<summary>
+lbldocID2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.CloseJob.txtRepairDetail">
+	<summary>
+txtRepairDetail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.CloseJob.btnSaveChange">
+	<summary>
+btnSaveChange control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Login.ScriptManager1">
+	<summary>
+ScriptManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Login.txtUserName">
+	<summary>
+txtUserName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Login.txtUserPass">
+	<summary>
+txtUserPass control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Login.lblMsg">
+	<summary>
+lblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Login.Button1">
+	<summary>
+Button1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:ITJOB_V._1._0._1.IT_Recording.form1">
 	<summary>
 form1 control.
@@ -1799,19 +931,887 @@ itRecordingGV control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="P:ITJOB_V._1._0._1.My.Resources.Resources.ResourceManager">
+</member><member name="P:ITJOB_V._1._0._1.My.MyWebExtension.Computer">
 	<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member><member name="P:ITJOB_V._1._0._1.My.Resources.Resources.Culture">
+ Returns information about the host computer.
+ </summary>
+</member><member name="P:ITJOB_V._1._0._1.My.MyWebExtension.User">
 	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="T:ITJOB_V._1._0._1.My.Resources.Resources">
+ Returns information for the current Web user.
+ </summary>
+</member><member name="P:ITJOB_V._1._0._1.My.MyWebExtension.Request">
 	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
+ Returns Request object.
+ </summary>
+</member><member name="P:ITJOB_V._1._0._1.My.MyWebExtension.Response">
+	<summary>
+ Returns Response object.
+ </summary>
+</member><member name="P:ITJOB_V._1._0._1.My.MyWebExtension.Log">
+	<summary>
+ Returns the Asp log object.
+ </summary>
+</member><member name="T:ITJOB_V._1._0._1.My.MyWebExtension">
+	<summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.form1">
+	<summary>
+form1 control.
 </summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.ScriptManager1">
+	<summary>
+ScriptManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.txtSearch">
+	<summary>
+txtSearch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.btnSearh">
+	<summary>
+btnSearh control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.title1">
+	<summary>
+title1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.btnAddPR">
+	<summary>
+btnAddPR control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.gvShowRP">
+	<summary>
+gvShowRP control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.UpdatePanel2">
+	<summary>
+UpdatePanel2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.txtAccessNo">
+	<summary>
+txtAccessNo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.txtAccAccess">
+	<summary>
+txtAccAccess control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.dcbTypeofAccess">
+	<summary>
+dcbTypeofAccess control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.txtAccessName">
+	<summary>
+txtAccessName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.dtpRecordDate">
+	<summary>
+dtpRecordDate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.CalendarExtender1">
+	<summary>
+CalendarExtender1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.dtpOrderDate">
+	<summary>
+dtpOrderDate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.CalendarExtender2">
+	<summary>
+CalendarExtender2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.txtValueOfAccess">
+	<summary>
+txtValueOfAccess control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.txtWarrantyValue">
+	<summary>
+txtWarrantyValue control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.txtOrderNo">
+	<summary>
+txtOrderNo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.txtPlaceOfWarranty">
+	<summary>
+txtPlaceOfWarranty control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.dtpStartWarranty">
+	<summary>
+dtpStartWarranty control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.CalendarExtender3">
+	<summary>
+CalendarExtender3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.dtpEndWarranty">
+	<summary>
+dtpEndWarranty control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.CalendarExtender4">
+	<summary>
+CalendarExtender4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.txtSupplierCode">
+	<summary>
+txtSupplierCode control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.txtSupplierName">
+	<summary>
+txtSupplierName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.dcbBranch">
+	<summary>
+dcbBranch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.cboDepartment">
+	<summary>
+cboDepartment control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.dtpReceive">
+	<summary>
+dtpReceive control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.CalendarExtender5">
+	<summary>
+CalendarExtender5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.txtRemark">
+	<summary>
+txtRemark control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.txtSN">
+	<summary>
+txtSN control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.txtOwner">
+	<summary>
+txtOwner control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.dcbWarrantyUnit">
+	<summary>
+dcbWarrantyUnit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.showRecordProduct.btnSaveChange">
+	<summary>
+btnSaveChange control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.itClose_Job.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.itClose_Job.ScriptManager1">
+	<summary>
+ScriptManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.itClose_Job.txtRequest">
+	<summary>
+txtRequest control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.itClose_Job.txtUserIP">
+	<summary>
+txtUserIP control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.itClose_Job.txtUserTel">
+	<summary>
+txtUserTel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.itClose_Job.txtBranch">
+	<summary>
+txtBranch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.itClose_Job.dlCaseJob">
+	<summary>
+dlCaseJob control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.itClose_Job.SqlDataSource1">
+	<summary>
+SqlDataSource1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.itClose_Job.txtDivision">
+	<summary>
+txtDivision control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.itClose_Job.txtDetail">
+	<summary>
+txtDetail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.itClose_Job.txtRecipient">
+	<summary>
+txtRecipient control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.itClose_Job.txtAssign">
+	<summary>
+txtAssign control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.itClose_Job.dtpCreatedate">
+	<summary>
+dtpCreatedate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.itClose_Job.CalendarExtender">
+	<summary>
+CalendarExtender control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.itClose_Job.dtpClosedate">
+	<summary>
+dtpClosedate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.itClose_Job.CalendarExtender2">
+	<summary>
+CalendarExtender2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.itClose_Job.ddlPosition">
+	<summary>
+ddlPosition control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.itClose_Job.txtRepair">
+	<summary>
+txtRepair control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.itClose_Job.btnSave_close">
+	<summary>
+btnSave_close control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.addjob.txtNameth">
+	<summary>
+txtNameth control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.addjob.txtuserIP">
+	<summary>
+txtuserIP control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.addjob.txtUserTel">
+	<summary>
+txtUserTel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.addjob.ddDivision">
+	<summary>
+ddDivision control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.addjob.ddltype">
+	<summary>
+ddltype control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.addjob.SqlDataSource1">
+	<summary>
+SqlDataSource1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.addjob.dd_Division">
+	<summary>
+dd_Division control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.addjob.txtDetail">
+	<summary>
+txtDetail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.addjob.btnSave">
+	<summary>
+btnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Homepage.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Homepage.ScriptManager1">
+	<summary>
+ScriptManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Homepage.txtSearchHp">
+	<summary>
+txtSearchHp control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Homepage.dtpFromDate">
+	<summary>
+dtpFromDate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Homepage.CalendarExtender">
+	<summary>
+CalendarExtender control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Homepage.ddlcategory">
+	<summary>
+ddlcategory control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Homepage.btnSearhHp">
+	<summary>
+btnSearhHp control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Homepage.title1">
+	<summary>
+title1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Homepage.btnAdd">
+	<summary>
+btnAdd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Homepage.UpModal">
+	<summary>
+UpModal control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Homepage.userGV">
+	<summary>
+userGV control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Homepage.title2">
+	<summary>
+title2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Homepage.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Homepage.JobITGV">
+	<summary>
+JobITGV control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Homepage.UpdatePanel2">
+	<summary>
+UpdatePanel2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Homepage.lbldocID2">
+	<summary>
+lbldocID2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Homepage.lblRequest2">
+	<summary>
+lblRequest2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Homepage.lblcreate2">
+	<summary>
+lblcreate2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Homepage.lblBranch">
+	<summary>
+lblBranch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Homepage.lblDept">
+	<summary>
+lblDept control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Homepage.Label2">
+	<summary>
+Label2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Homepage.lblDetail">
+	<summary>
+lblDetail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Homepage.ddlPosition">
+	<summary>
+ddlPosition control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Homepage.ddlAssign">
+	<summary>
+ddlAssign control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Homepage.SqlDataSource1">
+	<summary>
+SqlDataSource1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Homepage.txtComment">
+	<summary>
+txtComment control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Homepage.btnSaveChange">
+	<summary>
+btnSaveChange control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Manual.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Manual.lbltitle">
+	<summary>
+lbltitle control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Manual.TextBox1">
+	<summary>
+TextBox1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Manual.FileUpload1">
+	<summary>
+FileUpload1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Manual.btnUp">
+	<summary>
+btnUp control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Manual.btnDownload">
+	<summary>
+btnDownload control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Manual.lblText">
+	<summary>
+lblText control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.Manual.FileGV">
+	<summary>
+FileGV control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.MyJob.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.MyJob.ScriptManager1">
+	<summary>
+ScriptManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.MyJob.btnAddClode">
+	<summary>
+btnAddClode control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.MyJob.lblaccess">
+	<summary>
+lblaccess control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.MyJob.lbltitle1">
+	<summary>
+lbltitle1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.MyJob.MyJobGV">
+	<summary>
+MyJobGV control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.MyJob.lbltitle2">
+	<summary>
+lbltitle2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:ITJOB_V._1._0._1.MyJob.RepairGV">
+	<summary>
+RepairGV control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member>
 </members>
 </doc>

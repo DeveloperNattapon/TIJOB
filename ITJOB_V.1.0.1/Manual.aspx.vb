@@ -114,17 +114,19 @@ Public Class Manual
                         If TryCast(row.FindControl("chkSelect"), CheckBox).Checked Then
                             Dim filename As String = TryCast(row.FindControl("lblfilename"), Label).Text
                             Dim filePath As String = Server.MapPath("~/Myfiles/" + filename)
-                            zip.AddFile(filePath, "Myfiles")
+                            'zip.AddFile(filePath, "Myfiles")
+                            Dim peoc As New Diagnostics.Process
+                            Process.Start(filePath)
                         End If
                     Next
 
-                    Response.Clear()
-                    Response.BufferOutput = False
-                    Dim zipName As String = [String].Format("Zip_{0}.zip", DateTime.Now.ToString("yyyy-MMM-dd-HHmmss"))
-                    Response.ContentType = "application/zip"
-                    Response.AppendHeader("content-disposition", "attachment; filename=" + zipName)
-                    zip.Save(Response.OutputStream)
-                    Response.[End]()
+                    'Response.Clear()
+                    'Response.BufferOutput = False
+                    'Dim zipName As String = [String].Format("Zip_{0}.zip", DateTime.Now.ToString("yyyy-MMM-dd-HHmmss"))
+                    'Response.ContentType = "application/zip"
+                    'Response.AppendHeader("content-disposition", "attachment; filename=" + zipName)
+                    'zip.Save(Response.OutputStream)
+                    'Response.[End]()
                 End Using
             Catch ex As Exception
                 ScriptManager.RegisterClientScriptBlock(Me, Me.GetType(), "alertMessage", "alert('เกิดข้อผิดพลาด !!!!')", True)
