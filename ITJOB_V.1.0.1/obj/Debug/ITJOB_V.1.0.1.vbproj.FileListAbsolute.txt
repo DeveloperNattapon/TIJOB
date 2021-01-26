@@ -270,3 +270,8 @@ D:\ProjectDevelop\ITJOB\ITJOB_V.1.0.1\obj\Debug\ITJOB_V.1.0.1.vbproj.GenerateRes
 D:\ProjectDevelop\ITJOB\ITJOB_V.1.0.1\obj\Debug\ITJOB_V.1.0.1.dll
 D:\ProjectDevelop\ITJOB\ITJOB_V.1.0.1\obj\Debug\ITJOB_V.1.0.1.xml
 D:\ProjectDevelop\ITJOB\ITJOB_V.1.0.1\obj\Debug\ITJOB_V.1.0.1.pdb
+D:\TIJOB\ITJOB_V.1.0.1\obj\Debug\ITJOB_V.1.0.1.vbprojAssemblyReference.cache
+D:\TIJOB\ITJOB_V.1.0.1\obj\Debug\ITJOB_V._1._0._1.Resources.resources
+D:\TIJOB\ITJOB_V.1.0.1\obj\Debug\ITJOB_V.1.0.1.vbproj.GenerateResource.cache
+D:\TIJOB\ITJOB_V.1.0.1\obj\Debug\ITJOB_V.1.0.1.vbproj.CoreCompileInputs.cache
+D:\TIJOB\ITJOB_V.1.0.1\obj\Debug\ITJOB_V.1.0.1.xml
