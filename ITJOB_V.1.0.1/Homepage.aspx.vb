@@ -25,39 +25,39 @@ Public Class Homepage
     Sub BindData()
         Dim menu As String = "ITJOB"
         Dim userid = Session("UserID").ToString
-        Using db = New DB_EaglesInternalEntities
+        'Using db = New DB_EaglesInternalEntities
 
 
-            'Dim usergv = From tb1 In db.tblItJobDoc Where tb1.CreateBy = userid
-            '     Select tb1.ItJobDocID,
-            '            tb1.RequestFrom,
-            '            tb1.DivisionName,
-            '            tb1.JobStatus,
-            '            tb1.CreateDate,
-            '            Recipient = tb1.RecipientJob,
-            '            Assign = tb1.AssignJobTo
+        '    'Dim usergv = From tb1 In db.tblItJobDoc Where tb1.CreateBy = userid
+        '    '     Select tb1.ItJobDocID,
+        '    '            tb1.RequestFrom,
+        '    '            tb1.DivisionName,
+        '    '            tb1.JobStatus,
+        '    '            tb1.CreateDate,
+        '    '            Recipient = tb1.RecipientJob,
+        '    '            Assign = tb1.AssignJobTo
 
-            Dim usergv = From tb1 In db.tblItJobDocs
-                  Join tb2 In db.tblUsers On tb1.RecipientJob Equals tb2.UserId
-                  Select tb1.ItJobDocID,
-                         tb1.RequestFrom,
-                         tb1.DivisionName,
-                         tb1.JobStatus,
-                         tb1.CreateDate,
-                         Recipient = tb2.Name_thai,
-                         Assign = tb2.Name_thai
+        '    Dim usergv = From tb1 In db.tblItJobDocs
+        '          Join tb2 In db.tblUsers On tb1.RecipientJob Equals tb2.UserId
+        '          Select tb1.ItJobDocID,
+        '                 tb1.RequestFrom,
+        '                 tb1.DivisionName,
+        '                 tb1.JobStatus,
+        '                 tb1.CreateDate,
+        '                 Recipient = tb2.Name_thai,
+        '                 Assign = tb2.Name_thai
 
 
-            'Dim result = userGV.Union(usergv1).ToList()
+        'Dim result = userGV.Union(usergv1).ToList()
 
-            If usergv.Count > 0 Then
-                Me.userGV.DataSource = usergv.ToList()
-                Me.userGV.DataBind()
-            Else
-                Me.userGV.DataSource = Nothing
-                Me.userGV.DataBind()
-            End If
-        End Using
+        'If usergv.Count > 0 Then
+        '        Me.userGV.DataSource = usergv.ToList()
+        '        Me.userGV.DataBind()
+        '    Else
+        '        Me.userGV.DataSource = Nothing
+        '        Me.userGV.DataBind()
+        '    End If
+        'End Using
 
     End Sub
     Private Sub showData()
